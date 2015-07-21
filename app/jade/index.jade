@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+html(lang="ru-Ru")
+		include ./components/head.jade
+body
+		div.wrapper
+			div.main-content
+			include ./components/header.jade
+			aside.sidebar
+				nav.navigation
+					ul.navigation__list
+						li.navigation__item
+							a.navigation__link--active(href='/index.html') Обо мне
+						li.navigation__item
+							a.navigation__link(href='/mywork.html') Моя работа
+						li.navigation__item
+							a.navigation__link--border(href='/contactme.html') Связаться со мной
+				div.contacts
+					div.contacts__title Контакты
+					ul.contacts__list
+						li.contacts__item.contacts__mail: a.contacts__link(href="mailto:nstkmkm@gmail.com")
+								span.contacts__text nstkmkm@gmail.com
+						li.contacts_item.contacts__phone: a.contacts__link(href="tel:+79818496141")
+								span.contacts__text +79818496141
+						li.contacts_item.contacts__skype: a.contacts__link(href="skype:skype_nstkmkm?chat")
+								span.contacts__text skype_nstkmkm
+			div.variable-content
+				section.about-me
+
+				section.about-me
+				section.about-me
+
+include ./components/footer.jade
+script(src="bower_components/jquery/jquery.js")
+script(src="js/main.js")

@@ -1,16 +1,63 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF8">
-<title>homework#1</title>
-<link rel="stylesheet" href="bower/normalize.css/normalize.css">
-<link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-<h1>Workflow часть
-1</h1>
-<p>Просто текст, который мы будем изменять при помощи livereload</p>
-<script src="bower/jquery/jquery.js"></script>
-<script src="js/main.js"></script>
-</body>
+<html lang="ru-Ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Обо мне</title>
+    <meta name="author" content="Анастасия Ким"/>
+    <link rel="icon" href="img/panda-ball.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="bower_components/normalize.css/normalize.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <script src="bower_components/modernizr/modernizr.js"></script>
+  </head>
 </html>
+<body>
+  <div class="wrapper">
+    <div class="main-content"></div>
+    <!-- HEADER-->
+    <header class="page-header">
+      <div class="page-header__inner"><a href="/index.html" class="page-header__logo"><img src="img/logo.png" alt="logo" class="logo__img"/><span class="logo__text">Сайт Портфолио</span></a>
+        <ul class="page-header__socials">
+          <li class="socials__item"><a href="https://vk.com/nstkm" target="_blank" class="socials__link-vk">Вконтакте</a></li>
+          <li class="socials__item"><a href="https://twitter.com/unasvsebudet" target="_blank" class="socials__link-tw">Twitter</a></li>
+          <li class="socials__item"><a href="https://www.facebook.com/" target="_blank" class="socials__link-fb">Facebook</a></li>
+          <li class="socials__item"><a href="https://github.com/nstkm" target="_blank" class="socials__link-gh">Github</a></li>
+        </ul>
+      </div>
+    </header>
+    <!-- HEADER-->
+    
+    <aside class="sidebar">
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item"><a href="/index.html" class="navigation__link--active">Обо мне</a></li>
+          <li class="navigation__item"><a href="/mywork.html" class="navigation__link">Моя работа</a></li>
+          <li class="navigation__item"><a href="/contactme.html" class="navigation__link--border">Связаться со мной</a></li>
+        </ul>
+      </nav>
+      <div class="contacts">
+        <div class="contacts__title">Контакты</div>
+        <ul class="contacts__list">
+          <li class="contacts__item contacts__mail"><a href="mailto:nstkmkm@gmail.com" class="contacts__link"><span class="contacts__text">nstkmkm@gmail.com</span></a></li>
+          <li class="contacts_item contacts__phone"><a href="tel:+79818496141" class="contacts__link"><span class="contacts__text">+79818496141</span></a></li>
+          <li class="contacts_item contacts__skype"><a href="skype:skype_nstkmkm?chat" class="contacts__link"><span class="contacts__text">skype_nstkmkm</span></a></li>
+        </ul>
+      </div>
+    </aside>
+    <div class="variable-content">
+      <section class="about-me"></section>
+      <section class="about-me"></section>
+      <section class="about-me"></section>
+    </div>
+  </div>
+</body>
+<!-- FOOTER-->
+<footer class="page-footer">
+  <div class="page-footer__inner"><a href="/login.html" class="inner__lock">Войти</a>
+    <p class="inner__copyright"> &copy;  2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</p>
+  </div>
+</footer>
+<!-- FOOTER-->
+<script src="bower_components/jquery/jquery.js"></script>
+<script src="js/main.js"></script>
