@@ -1,4 +1,4 @@
-var gulp = require("gulp"),
+﻿var gulp = require("gulp"),
     jade = require('gulp-jade'),
     sass = require('gulp-sass'),
     rename = require('gulp-rename'),
@@ -37,7 +37,7 @@ gulp.src('app/jade/index.jade')
 gulp.task('css', function () {
         gulp.src('app/scss/main.scss')
         //.pipe(concatCss('app/css/style.css'))
-        .pipe(prefix('last 2 versions','>1%','ie 7'))
+        .pipe(prefix('last 10 versions','>1%','ie 8'))
         .pipe(sass())
         //.pipe(minifyCss())
         .pipe(rename('main.css'))

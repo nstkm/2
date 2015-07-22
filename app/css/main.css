@@ -1,26 +1,30 @@
 @font-face {
+  font-family: 'fira_sansregular';
+  src: url("../fonts/fira/firasans-regular.eot");
+  src: url("../fonts/fira/firasans-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/fira/firasans-regular.woff") format("woff"), url("../fonts/fira/firasans-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
   font-family: 'fira_sansbook';
   src: url("../fonts/fira/firasans-book.eot");
   src: url("../fonts/fira/firasans-book.eot?#iefix") format("embedded-opentype"), url("../fonts/fira/firasans-book.woff") format("woff"), url("../fonts/fira/firasans-book.ttf") format("truetype");
   font-weight: normal;
-  font-style: normal;
-   }
+  font-style: normal; }
 
 @font-face {
   font-family: 'fira_sansmedium';
   src: url("../fonts/fira/firasans-medium.eot");
   src: url("../fonts/fira/firasans-medium.eot?#iefix") format("embedded-opentype"), url("../fonts/fira/firasans-medium.woff") format("woff"), url("../fonts/fira/firasans-medium.ttf") format("truetype");
   font-weight: normal;
-  font-style: normal;
-   }
+  font-style: normal; }
 
 @font-face {
   font-family: 'fira_sanslight';
   src: url("../fonts/fira/firasans-light.eot");
   src: url("../fonts/fira/firasans-light.eot?#iefix") format("embedded-opentype"), url("../fonts/fira/firasans-light.woff") format("woff"), url("../fonts/fira/firasans-light.ttf") format("truetype");
   font-weight: normal;
-  font-style: normal;
-}
+  font-style: normal; }
 
 html {
   height: 100%; }
@@ -30,3 +34,69 @@ body {
   background: url(../img/bg.png) repeat;
   font: normal 1em "fira_sanslight";
   color: #4a545d; }
+
+.wrapper {
+  min-width: 970px;
+  min-height: 100%;
+  position: relative;
+  height: auto !important; }
+
+.page-header {
+  margin-bottom: 39px; }
+  .page-header__inner {
+    max-width: 1200px;
+    min-width: 960px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative; }
+  .page-header__logo {
+    float: left;
+    margin-bottom: 35px; }
+
+.page-header__socials {
+  float: right; }
+
+.socials {
+  margin-left: 0px; }
+  .socials__item {
+    display: inline-block;
+    vertical-align: top;
+    height: 47px;
+    width: 47px;
+    margin-left: 24px; }
+  .socials__link {
+    display: block;
+    width: 100%;
+    height: 100%; }
+
+.page-footer {
+  background: #eff3f7;
+  font-family: 'fira_sanslight';
+  height: 80px;
+  min-width: 970px;
+  margin-top: -80px; }
+  .page-footer .inner__copyright {
+    text-align: center;
+    font-size: 13px;
+    margin: 0 180px; }
+  .page-footer:before {
+    content: ' ';
+    display: block;
+    height: 3px;
+    background-image: -webkit-linear-gradient(left, rgba(28, 102, 122, 0.9) 0, rgba(246, 250, 254, 0.9) 0, rgba(216, 216, 216, 0.9) 0, rgba(242, 246, 250, 0.9) 0, rgba(28, 102, 122, 0.9) 48%, rgba(242, 246, 250, 0.9) 100%);
+    background-image: linear-gradient(to right, rgba(28, 102, 122, 0.9) 0, rgba(246, 250, 254, 0.9) 0, rgba(216, 216, 216, 0.9) 0, rgba(242, 246, 250, 0.9) 0, rgba(28, 102, 122, 0.9) 48%, rgba(242, 246, 250, 0.9) 100%); }
+
+.page-footer .page-footer__inner {
+  padding-top: 23px;
+  position: relative; }
+
+.inner__lock {
+  display: block;
+  position: absolute;
+  top: 26px;
+  left: 20px;
+  width: 20px;
+  height: 32px;
+  background: url(../img/lock.png) no-repeat; }
+  .inner__lock:hover {
+    background: url(../img/unlock.png) no-repeat; }
