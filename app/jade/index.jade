@@ -5,13 +5,14 @@ body
 		div.wrapper
 			div.main-content
 			include ./components/header.jade
+			// Навигация
 			aside.sidebar
 				nav.navigation
 					ul.navigation__list
 						li.navigation__item
 							a.navigation__link--active(href='/index.html') Обо мне
 						li.navigation__item
-							a.navigation__link(href='/mywork.html') Моя работа
+							a.navigation__link(href='/mywork.html') Мои работа
 						li.navigation__item
 							a.navigation__link--border(href='/contactme.html') Связаться со мной
 				div.contacts
@@ -23,8 +24,11 @@ body
 								span.contacts__text +79818496141
 						li.contacts_item.contacts__skype: a.contacts__link(href="skype:skype_nstkmkm?chat")
 								span.contacts__text skype_nstkmkm
+			//Изменяемый контент
 			article.page-content
 				section.about-me
+					h2.about-me__title
+					div.about-me__inner
 
 				section.about-me
 				section.about-me

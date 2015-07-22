@@ -3,24 +3,30 @@
   src: url("../fonts/fira/firasans-book.eot");
   src: url("../fonts/fira/firasans-book.eot?#iefix") format("embedded-opentype"), url("../fonts/fira/firasans-book.woff") format("woff"), url("../fonts/fira/firasans-book.ttf") format("truetype");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+   }
 
 @font-face {
   font-family: 'fira_sansmedium';
   src: url("../fonts/fira/firasans-medium.eot");
   src: url("../fonts/fira/firasans-medium.eot?#iefix") format("embedded-opentype"), url("../fonts/fira/firasans-medium.woff") format("woff"), url("../fonts/fira/firasans-medium.ttf") format("truetype");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+   }
 
 @font-face {
   font-family: 'fira_sanslight';
   src: url("../fonts/fira/firasans-light.eot");
   src: url("../fonts/fira/firasans-light.eot?#iefix") format("embedded-opentype"), url("../fonts/fira/firasans-light.woff") format("woff"), url("../fonts/fira/firasans-light.ttf") format("truetype");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
 
 html {
   height: 100%; }
 
 body {
-  background: url(../img/bg.png) repeat; }
+  height: 100%;
+  background: url(../img/bg.png) repeat;
+  font: normal 1em "fira_sanslight";
+  color: #4a545d; }
