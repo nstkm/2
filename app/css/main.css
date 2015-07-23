@@ -122,7 +122,8 @@ body {
   margin-bottom: 25px;
   border-radius: 10px;
   overflow: hidden;
-  background: #eff3f7; }
+  background: #eff3f7;
+  /* для текущего пункта меню */ }
   .navigation__list {
     list-style: none;
     margin: 0;
@@ -132,10 +133,24 @@ body {
     margin: 0 10px; }
     .navigation__item:first-child {
       border-top: none; }
+  .navigation .navigation__item--active {
+    background: #3ba8c0;
+    border-bottom: none;
+    margin: 0;
+    margin-bottom: -2px;
+    padding-left: 10px;
+    /* чтобы текст не съехал влево */ }
+    .navigation .navigation__item--active .navigation__link {
+      color: #ffffff;
+      font-size: 23px; }
   .navigation__link {
+    display: block;
     text-decoration: none;
     color: #959aa8;
-    margin: 30px 0; }
+    font-family: 'fira_sansbook';
+    font-size: 21px;
+    padding: 20px 0;
+    margin-left: 17px; }
 
 .contacts__link {
   text-decoration: none;
