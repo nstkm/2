@@ -58,6 +58,11 @@ body {
     height: 100%;
     margin: 0 auto;
     position: relative; }
+    .page-header__inner:before, .page-header__inner:after {
+      content: ' ';
+      display: table; }
+    .page-header__inner:after {
+      clear: both; }
   .page-header__logo {
     left: 0;
     position: absolute;
@@ -74,7 +79,7 @@ body {
 .page-header__socials {
   position: absolute;
   right: 0;
-  top: 35px; }
+  top: 20px; }
   .page-header__socials .socials__item:first-child {
     margin-left: 0px; }
 
@@ -92,41 +97,45 @@ body {
   text-indent: -9999px; }
   .socials__link.vk {
     background: url(../img/vk.png) no-repeat; }
+    .socials__link.vk:hover {
+      background: url(../img/vk-effect.png) no-repeat; }
   .socials__link.tw {
     background: url(../img/tw.png) no-repeat; }
+    .socials__link.tw:hover {
+      background: url(../img/tw-effect.png) no-repeat; }
   .socials__link.fb {
     background: url(../img/fb.png) no-repeat; }
+    .socials__link.fb:hover {
+      background: url(../img/fb-effect.png) no-repeat; }
   .socials__link.gh {
-    background: url(../img/gihtub.png) no-repeat; }
+    background: url(../img/gh.png) no-repeat; }
+    .socials__link.gh:hover {
+      background: url(../img/gh-effect.png) no-repeat; }
 
 /* variable content */
 .sidebar {
   width: 250px;
   float: left; }
 
+/* Навигация */
 .navigation {
-  border-radius: 5px;
   margin-bottom: 25px;
-  overflow: hidden; }
+  border-radius: 10px;
+  overflow: hidden;
+  background: #eff3f7; }
   .navigation__list {
     list-style: none;
     margin: 0;
     padding: 0; }
   .navigation__item {
-    background: #eff3f7;
-    font-size: 21px;
     border-top: 2px solid #3ba8c0;
-    margin: 0 11px;
-    color: #959aa8; }
+    margin: 0 10px; }
     .navigation__item:first-child {
       border-top: none; }
   .navigation__link {
-    font-family: 'fira_sansbook';
-    text-decoration: none; }
-
-.navigation__item--active {
-  background: #3ba8c0;
-  color: #ffffff; }
+    text-decoration: none;
+    color: #959aa8;
+    margin: 30px 0; }
 
 .contacts__link {
   text-decoration: none;
@@ -135,6 +144,28 @@ body {
 .page-content {
   width: 650px;
   float: right; }
+
+.about-me {
+  overflow: hidden;
+  background: #eff3f7;
+  border-radius: 5px;
+  margin-bottom: 26px; }
+
+/* Основная информация */
+.image-wrap {
+  float: left;
+  margin-left: 55px;
+  margin-top: 18px; }
+
+.avatar-box {
+  width: 142px;
+  height: 142px;
+  border-radius: 50% 50%;
+  border: 2px solid #3ba8c0; }
+
+.worksheet {
+  float: right;
+  width: 420px; }
 
 /* общий стиль */
 .container {
