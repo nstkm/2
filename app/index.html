@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>Обо мне</title>
+    <title>NSTKM</title>
     <meta name="author" content="Анастасия Ким"/>
     <!--FAVICON-->
     <link rel="icon" href="img/panda-ball.ico" type="image/x-icon"/>
@@ -22,50 +22,119 @@
     <header class="page-header">
       <div class="page-header__inner"><a href="/index.html" class="page-header__logo"><img src="img/logo.png" alt="logo" class="logo__img"/><span class="logo__text">Сайт Портфолио</span></a>
         <ul class="page-header__socials">
-          <li class="socials__item"><a href="https://vk.com/nstkm" target="_blank" class="socials__link-vk">Вконтакте</a></li>
-          <li class="socials__item"><a href="https://twitter.com/unasvsebudet" target="_blank" class="socials__link-tw">Twitter</a></li>
-          <li class="socials__item"><a href="https://www.facebook.com/" target="_blank" class="socials__link-fb">Facebook</a></li>
-          <li class="socials__item"><a href="https://github.com/nstkm" target="_blank" class="socials__link-gh">Github</a></li>
+          <li class="socials__item"><a href="https://vk.com/nstkm" target="_blank" class="socials__link vk">Вконтакте</a></li>
+          <li class="socials__item"><a href="https://twitter.com/unasvsebudet" target="_blank" class="socials__link tw">Twitter</a></li>
+          <li class="socials__item"><a href="https://www.facebook.com/" target="_blank" class="socials__link fb">Facebook</a></li>
+          <li class="socials__item"><a href="https://github.com/nstkm" target="_blank" class="socials__link gh">Github</a></li>
         </ul>
       </div>
     </header>
     <!-- HEADER-->
     
-    <!-- Навигация-->
-    <aside class="sidebar">
-      <nav class="navigation">
-        <ul class="navigation__list">
-          <li class="navigation__item"><a href="/index.html" class="navigation__link--active">Обо мне</a></li>
-          <li class="navigation__item"><a href="/mywork.html" class="navigation__link">Мои работа</a></li>
-          <li class="navigation__item"><a href="/contactme.html" class="navigation__link--border">Связаться со мной</a></li>
-        </ul>
-      </nav>
-      <div class="contacts">
-        <div class="contacts__title">Контакты</div>
-        <ul class="contacts__list">
-          <li class="contacts__item contacts__mail"><a href="mailto:nstkmkm@gmail.com" class="contacts__link"><span class="contacts__text">nstkmkm@gmail.com</span></a></li>
-          <li class="contacts_item contacts__phone"><a href="tel:+79818496141" class="contacts__link"><span class="contacts__text">+79818496141</span></a></li>
-          <li class="contacts_item contacts__skype"><a href="skype:skype_nstkmkm?chat" class="contacts__link"><span class="contacts__text">skype_nstkmkm</span></a></li>
-        </ul>
-      </div>
-    </aside>
-    <!--Изменяемый контент-->
-    <article class="page-content">
-      <section class="about-me">
-        <h2 class="about-me__title"></h2>
-        <div class="about-me__inner">
-          <div class="image"></div>
+    <div class="container">
+      <!-- Навигация-->
+      <aside class="sidebar">
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item navigation__item--active"><a href="/index.html" class="navigation__link">Обо мне</a></li>
+            <li class="navigation__item"><a href="/mywork.html" class="navigation__link">Мои работы</a></li>
+            <li class="navigation__item"><a href="/contactme.html" class="navigation__link">Связаться со мной</a></li>
+          </ul>
+        </nav>
+        <div class="contacts">
+          <div class="contacts__title">Контакты</div>
+          <ul class="contacts__list">
+            <li class="contacts__item contacts__mail"><a href="mailto:nstkmkm@gmail.com" class="contacts__link"><span class="contacts__text">nstkmkm@gmail.com</span></a></li>
+            <li class="contacts_item contacts__phone"><a href="tel:+79818496141" class="contacts__link"><span class="contacts__text">+79818496141</span></a></li>
+            <li class="contacts_item contacts__skype"><a href="skype:skype_nstkmkm?chat" class="contacts__link"><span class="contacts__text">skype_nstkmkm</span></a></li>
+          </ul>
         </div>
-      </section>
-      <section class="about-me"></section>
-      <section class="about-me"></section>
-    </article>
+      </aside>
+      <!-- Изменяемый контент-->
+      <article class="page-content">
+        <!-- Основная информация-->
+        <section class="about-me">
+          <h2 class="about-me__title">Основная информация</h2>
+          <div class="about-me__inner">
+            <div class="image-wrap">
+              <div class="avatar-box"><img src="img/avatar.png" height="200" alt="avatar" class="avatar"/></div>
+            </div>
+            <div class="worksheet">
+              <ul class="worksheet__list">
+                <li class="worksheet__item">
+                  <div class="worksheet__question">Меня зовут:</div>
+                  <div class="worksheet__answer">Ким Анастасия Александровна</div>
+                </li>
+                <li class="worksheet__item">
+                  <div class="worksheet__question">Мой возраст:</div>
+                  <div class="worksheet__answer">20 лет</div>
+                </li>
+                <li class="worksheet__item">
+                  <div class="worksheet__question">Мой город:</div>
+                  <div class="worksheet__answer">Санкт-Петербург, Россия</div>
+                </li>
+                <li class="worksheet__item">
+                  <div class="worksheet__question">Моя специализация:</div>
+                  <div class="worksheet__answer">FRONTEND разработчик</div>
+                </li>
+                <li class="worksheet__item">
+                  <div class="worksheet__question">Ключевые навыки</div>
+                  <div class="worksheet__answer skill">
+                    <ul class="skill__list">
+                      <li class="skill__item">html</li>
+                      <li class="skill__item">css</li>
+                      <li class="skill__item">javascript</li>
+                      <li class="skill__item">sass</li>
+                      <li class="skill__item">jade</li>
+                      <li class="skill__item">gulp</li>
+                      <li class="skill__item">git</li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <!-- Опыт работы-->
+        <section class="about-me">
+          <h2 class="about-me__title">Опыт работы</h2>
+          <div class="about-me__inner">
+            <ul class="work-experience__list">
+              <li class="work-experience__item work-icon">
+                <div class="work-experience__where">Фирма - Должность</div>
+                <div class="work-experience__period">Месяц Год - Месяц Год</div>
+              </li>
+              <li class="work-experience__item work-icon">
+                <div class="work-experience__where">Фирма - Должность</div>
+                <div class="work-experience__period">Месяц Год - Месяц Год</div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!-- Образование-->
+        <section class="about-me">
+          <h2 class="about-me__title">Образование</h2>
+          <div class="about-me__inner">
+            <ul class="education__list">
+              <li class="education__item college-icon">
+                <div class="education__where">Незаконченное высшее. СПБПУ Петра Великого</div>
+                <div class="education__period">Сентябрь 2013 - по настоящее время</div>
+              </li>
+              <li class="education__item work-icon">
+                <div class="education__where">Курсы Loftschool.ru</div>
+                <div class="education__period">Июль 2015 - по настоящее время</div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </article>
+    </div>
   </div>
 </body>
 <!-- FOOTER-->
 <footer class="page-footer">
-  <div class="page-footer__inner"><a href="/login.html" class="inner__lock"></a>
-    <p class="inner__copyright"> &copy;  2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</p>
+  <div class="container"><a href="/login.html" class="footer__lock"></a>
+    <p class="footer__copyright"> &copy;  2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</p>
   </div>
 </footer>
 <!-- FOOTER-->

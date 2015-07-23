@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'fira_sansregular';
   src: url("../fonts/fira/firasans-regular.eot");
@@ -49,7 +50,8 @@ body {
 .page-header {
   height: 116px;
   margin-bottom: 39px;
-  background: #eff3f7; }
+  background: #eff3f7;
+  position: relative; }
   .page-header__inner {
     max-width: 1200px;
     min-width: 960px;
@@ -57,41 +59,102 @@ body {
     margin: 0 auto;
     position: relative; }
   .page-header__logo {
-    float: left; }
+    left: 0;
+    position: absolute;
+    top: 39px; }
   .page-header:after {
     content: ' ';
     display: block;
     height: 3px;
     background-image: -webkit-linear-gradient(left, rgba(28, 102, 122, 0.9) 0, rgba(246, 250, 254, 0.9) 0, rgba(216, 216, 216, 0.9) 0, rgba(242, 246, 250, 0.9) 0, rgba(28, 102, 122, 0.9) 48%, rgba(242, 246, 250, 0.9) 100%);
     background-image: linear-gradient(to right, rgba(28, 102, 122, 0.9) 0, rgba(246, 250, 254, 0.9) 0, rgba(216, 216, 216, 0.9) 0, rgba(242, 246, 250, 0.9) 0, rgba(28, 102, 122, 0.9) 48%, rgba(242, 246, 250, 0.9) 100%); }
-
-.logo__text {
-  display: none; }
+  .page-header .logo__text {
+    display: none; }
 
 .page-header__socials {
+  position: absolute;
+  right: 0;
+  top: 35px; }
+  .page-header__socials .socials__item:first-child {
+    margin-left: 0px; }
+
+.socials__item {
+  list-style: none;
+  display: inline-block;
+  height: 47px;
+  width: 47px;
+  margin-left: 19px; }
+
+.socials__link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-indent: -9999px; }
+  .socials__link.vk {
+    background: url(../img/vk.png) no-repeat; }
+  .socials__link.tw {
+    background: url(../img/tw.png) no-repeat; }
+  .socials__link.fb {
+    background: url(../img/fb.png) no-repeat; }
+  .socials__link.gh {
+    background: url(../img/gihtub.png) no-repeat; }
+
+/* variable content */
+.sidebar {
+  width: 250px;
+  float: left; }
+
+.navigation {
+  border-radius: 5px;
+  margin-bottom: 25px;
+  overflow: hidden; }
+  .navigation__list {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  .navigation__item {
+    background: #eff3f7;
+    font-size: 21px;
+    border-top: 2px solid #3ba8c0;
+    margin: 0 11px;
+    color: #959aa8; }
+    .navigation__item:first-child {
+      border-top: none; }
+  .navigation__link {
+    font-family: 'fira_sansbook';
+    text-decoration: none; }
+
+.navigation__item--active {
+  background: #3ba8c0;
+  color: #ffffff; }
+
+.contacts__link {
+  text-decoration: none;
+  list-style: none; }
+
+.page-content {
+  width: 650px;
   float: right; }
 
-.socials {
-  margin-left: 0px; }
-  .socials__item {
-    display: inline-block;
-    vertical-align: top;
-    height: 47px;
-    width: 47px;
-    margin-left: 24px; }
-  .socials__link {
-    display: block;
-    width: 100%;
-    height: 100%; }
+/* общий стиль */
+.container {
+  width: 960px;
+  margin: 0 auto; }
+  .container:before, .container:after {
+    content: ' ';
+    display: table; }
+  .container:after {
+    clear: both; }
 
 /* FOOTER */
 .page-footer {
   background: #eff3f7;
   font-family: 'fira_sanslight';
+  color: #4a545d;
   height: 80px;
   min-width: 970px;
   margin-top: -80px; }
-  .page-footer .inner__copyright {
+  .page-footer .footer__copyright {
     text-align: center;
     font-size: 13px;
     margin: 0 180px;
@@ -103,11 +166,11 @@ body {
     background-image: -webkit-linear-gradient(left, rgba(28, 102, 122, 0.9) 0, rgba(246, 250, 254, 0.9) 0, rgba(216, 216, 216, 0.9) 0, rgba(242, 246, 250, 0.9) 0, rgba(28, 102, 122, 0.9) 48%, rgba(242, 246, 250, 0.9) 100%);
     background-image: linear-gradient(to right, rgba(28, 102, 122, 0.9) 0, rgba(246, 250, 254, 0.9) 0, rgba(216, 216, 216, 0.9) 0, rgba(242, 246, 250, 0.9) 0, rgba(28, 102, 122, 0.9) 48%, rgba(242, 246, 250, 0.9) 100%); }
 
-.page-footer .page-footer__inner {
+.page-footer .container {
   padding-top: 23px;
   position: relative; }
 
-.inner__lock {
+.footer__lock {
   display: block;
   position: absolute;
   padding-left: 24px;
@@ -116,14 +179,5 @@ body {
   width: 20px;
   height: 32px;
   background: url(../img/lock.png) no-repeat; }
-  .inner__lock:hover {
+  .footer__lock:hover {
     background: url(../img/unlock.png) no-repeat; }
-
-/* variable content */
-.sidebar {
-  width: 250px;
-  float: left; }
-
-.page-content {
-  width: 650px;
-  float: right; }

@@ -5,34 +5,82 @@ body
 		div.wrapper
 			div.main-content
 			include ./components/header.jade
-			// Навигация
-			aside.sidebar
-				nav.navigation
-					ul.navigation__list
-						li.navigation__item
-							a.navigation__link--active(href='/index.html') Обо мне
-						li.navigation__item
-							a.navigation__link(href='/mywork.html') Мои работа
-						li.navigation__item
-							a.navigation__link--border(href='/contactme.html') Связаться со мной
-				div.contacts
-					div.contacts__title Контакты
-					ul.contacts__list
-						li.contacts__item.contacts__mail: a.contacts__link(href="mailto:nstkmkm@gmail.com")
-								span.contacts__text nstkmkm@gmail.com
-						li.contacts_item.contacts__phone: a.contacts__link(href="tel:+79818496141")
-								span.contacts__text +79818496141
-						li.contacts_item.contacts__skype: a.contacts__link(href="skype:skype_nstkmkm?chat")
-								span.contacts__text skype_nstkmkm
-			//Изменяемый контент
-			article.page-content
-				section.about-me
-					h2.about-me__title
-					div.about-me__inner
-						div.image
-
-				section.about-me
-				section.about-me
+			div.container
+				// Навигация
+				aside.sidebar
+					nav.navigation
+						ul.navigation__list
+							li.navigation__item.navigation__item--active
+								a.navigation__link(href='/index.html') Обо мне
+							li.navigation__item
+								a.navigation__link(href='/mywork.html') Мои работы
+							li.navigation__item
+								a.navigation__link(href='/contactme.html') Связаться со мной
+					div.contacts
+						div.contacts__title Контакты
+						ul.contacts__list
+							li.contacts__item.contacts__mail: a.contacts__link(href="mailto:nstkmkm@gmail.com")
+									span.contacts__text nstkmkm@gmail.com
+							li.contacts_item.contacts__phone: a.contacts__link(href="tel:+79818496141")
+									span.contacts__text +79818496141
+							li.contacts_item.contacts__skype: a.contacts__link(href="skype:skype_nstkmkm?chat")
+									span.contacts__text skype_nstkmkm
+				// Изменяемый контент
+				article.page-content
+					// Основная информация
+					section.about-me
+						h2.about-me__title Основная информация
+						div.about-me__inner
+							div.image-wrap
+								div.avatar-box
+									img.avatar(src="img/avatar.png" height="200" alt="avatar")
+							div.worksheet
+								ul.worksheet__list
+									li.worksheet__item
+										div.worksheet__question Меня зовут:
+										div.worksheet__answer Ким Анастасия Александровна
+									li.worksheet__item
+										div.worksheet__question Мой возраст:
+										div.worksheet__answer 20 лет
+									li.worksheet__item
+										div.worksheet__question Мой город:
+										div.worksheet__answer Санкт-Петербург, Россия
+									li.worksheet__item
+										div.worksheet__question Моя специализация:
+										div.worksheet__answer FRONTEND разработчик
+									li.worksheet__item
+										div.worksheet__question Ключевые навыки
+										div.worksheet__answer.skill
+												ul.skill__list
+														li.skill__item html
+														li.skill__item css
+														li.skill__item javascript
+														li.skill__item sass
+														li.skill__item jade
+														li.skill__item gulp
+														li.skill__item git
+					// Опыт работы
+					section.about-me
+						h2.about-me__title Опыт работы
+						div.about-me__inner
+							ul.work-experience__list
+								li.work-experience__item.work-icon
+									div.work-experience__where Фирма - Должность
+									div.work-experience__period Месяц Год - Месяц Год
+								li.work-experience__item.work-icon
+									div.work-experience__where Фирма - Должность
+									div.work-experience__period Месяц Год - Месяц Год
+					// Образование
+					section.about-me
+						h2.about-me__title Образование
+						div.about-me__inner
+							ul.education__list
+								li.education__item.college-icon
+									div.education__where Незаконченное высшее. СПБПУ Петра Великого
+									div.education__period Сентябрь 2013 - по настоящее время
+								li.education__item.work-icon
+									div.education__where Курсы Loftschool.ru
+									div.education__period Июль 2015 - по настоящее время
 
 include ./components/footer.jade
 script(src="bower_components/jquery/jquery.js")
