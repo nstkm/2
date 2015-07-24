@@ -24,12 +24,12 @@ body
 							li.contacts_item.contacts__phone: a.contacts__link(href="tel:+79818496141")
 									span.contacts__text +79818496141
 							li.contacts_item.contacts__skype: a.contacts__link(href="skype:skype_nstkmkm?chat")
-									span.contacts__text skype_nstkmkm
+									span.contacts__text nstkmkm
 				// Изменяемый контент
 				article.page-content
 					// Основная информация
 					section.about-me
-						h2.about-me__title Основная информация
+						div.about-me__title Основная информация
 						div.about-me__inner
 							div.image-wrap
 								div.avatar-box
@@ -61,26 +61,26 @@ body
 														li.skill__item git
 					// Опыт работы
 					section.about-me
-						h2.about-me__title Опыт работы
+						div.about-me__title Опыт работы
 						div.about-me__inner
-							ul.work-experience__list
-								li.work-experience__item.work-icon
-									div.work-experience__where Фирма - Должность
-									div.work-experience__period Месяц Год - Месяц Год
-								li.work-experience__item.work-icon
-									div.work-experience__where Фирма - Должность
-									div.work-experience__period Месяц Год - Месяц Год
+							ul.about-me__list
+								li.about-me__item.work-icon
+									div.about-me__where Фирма - Должность
+									div.about-me__period Месяц Год - Месяц Год
+								li.about-me__item.work-icon
+									div.about-me__where Фирма - Должность
+									div.about-me__period Месяц Год - Месяц Год
 					// Образование
 					section.about-me
-						h2.about-me__title Образование
+						div.about-me__title Образование
 						div.about-me__inner
-							ul.education__list
-								li.education__item.college-icon
-									div.education__where Незаконченное высшее. СПБПУ Петра Великого
-									div.education__period Сентябрь 2013 - по настоящее время
-								li.education__item.work-icon
-									div.education__where Курсы Loftschool.ru
-									div.education__period Июль 2015 - по настоящее время
+							ul.about-me__list
+								li.about-me__item.college-icon
+									div.about-me__where Незаконченное высшее. СПБПУ Петра Великого
+									div.about-me__period Сентябрь 2013 - по настоящее время
+								li.about-me__item.course-icon
+									div.about-me__where Курсы Loftschool.ru
+									div.about-me__period Июль 2015 - по настоящее время
 
 include ./components/footer.jade
 script(src="bower_components/jquery/jquery.js")

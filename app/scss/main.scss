@@ -51,7 +51,7 @@ $nav-bg-active:                     #3ba8c0;
 $nav-font-color-line:               #3ba8c0;
 $nav-font-color:                    #959aa8;
 
-$contact-email-color:               #41b9d4;
+$contact-mail-color:               #41b9d4;
 $contact-phone-color:               #48cbe8;
 $contact-skype-color:               #51daf8;
 
@@ -185,7 +185,7 @@ body {
 
 .navigation{
 	margin-bottom: 25px;
-	border-radius: 10px;
+	border-radius: 4px;
 	overflow: hidden;
 	background: $bg-color;
 	&__list {
@@ -221,21 +221,74 @@ body {
 		padding: 20px 0;
 		margin-left: 17px;
 			&:hover {
-				color:
+				color: $title-color;
 			}
 	}
 }
 
+/* Контакты */
 
+.contacts {
+		color: $white-text;
+		overflow:hidden;
+		border-radius: 4px;
+		font-family: 'fira_sansbook';
+		font-size: 21px;
+		&__list {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+				}
+		&__title {
+			padding: 7px 0;
+			padding-left: 20px;
+			background: $title-color;
+				}
+		&__item {
+			//padding: 3px 30px;
+			&:before {
+			content:'';
+			display: inline-block;
+			vertical-align: middle;
+			width: 21px;
+			height: 21px;
+			//padding: 0px 20px;
+					}
+				}
+				&__phone {
+		background: $contact-phone-color;
+				&:before {
+					background: url(../img/mobile.png) no-repeat left center;
+						}
+				}
+		&__mail {
+		background: $contact-mail-color;
+				&:before {
+					background: url(../img/mail.png) no-repeat left center;
+						}
+				}
+		&__skype {
+		background: $contact-skype-color;
+				&:before {
+					background: url(../img/skype.png) no-repeat left center;
+						}
+				}
+		&__link {
 
-
-
-
-
-.contacts__link {
-		text-decoration: none;
-		list-style: none;
+			text-decoration: none;
+			color: $white-text;
+			font-size: 17px;
+				&:hover {
+					text-decoration: underline;
+				}
+		}
 }
+
+.contacts_item.contacts__phone {
+
+}
+
+
 
 .page-content {
 	width:650px;
@@ -246,24 +299,80 @@ body {
 	background: $bg-color ;
 	border-radius: 5px;
 	margin-bottom:26px;
+		&__title {
+		display: inline-block;
+		color: $title-color;
+		font-family: 'fira_sansbook';
+		font-size: 27px;
+		padding: 14px 22px;
+		border-bottom: 2px solid $title-color;
+		}
+		&__list {
+			list-style: none;
+		}
+		&__where {
+			font-family: 'fira_sansbook';
+			font-size: 17px;
+		}
+		&__period {
+			font-family: 'fira_sanslight';
+			font-size: 15px;
+			line-height: 1;
+		}
 }
+
+
+.about-me {
+	.about-me__item {
+		padding-left: 85px;
+		&.work-icon {
+			background: url(../img/case.png) 16px center no-repeat;
+		}
+		&.college-icon {
+			background: url(../img/hat.png) 15px center no-repeat;
+		}
+		&.course-icon {
+			background: url(../img/doc.png) 22px center no-repeat;
+		}
+	}
+}
+
 /* Основная информация */
 .image-wrap {
 	float: left;
 	margin-left: 55px;
-	margin-top: 18px;
+	margin-top: 20px;
 }
 
 	.avatar-box {
-		width: 142px;
-		height: 142px;
+		overflow: hidden;
+		width: 145px;
+		height: 145px;
 		border-radius: 50% 50%;
-		border: 2px solid #3ba8c0;
+		border: 5px solid #3ba8c0;
 	}
 
 .worksheet {
 	float: right;
 	width: 420px;
+		&__item {
+			list-style: none;
+		}
+		&__question {
+			font-family: 'fira_sansmedium';
+			font-size: 17px;
+		}
+		&__answer {
+			font-family: 'fira_sansbook';
+			margin-left: 20px;
+			font-size: 15px;
+			overflow: hidden;
+			//float: left;
+			max-width: 218px;
+		}
+}
+.skill__list {
+		display:inline-block;
 }
 
 /* общий стиль */
