@@ -163,37 +163,32 @@ body {
 
 /* Контакты */
 .contacts {
+  background: #eff3f7;
+  font-family: 'fira_sansbook';
+  font-size: 21px;
   color: #ffffff;
   overflow: hidden;
-  border-radius: 4px;
-  font-family: 'fira_sansbook';
-  font-size: 21px; }
+  border-radius: 5px;
+  margin-right: -10px; }
   .contacts__list {
     list-style: none;
     padding: 0;
     margin: 0; }
   .contacts__title {
-    padding: 7px 0;
-    padding-left: 20px;
-    background: #3ba8c0; }
-  .contacts__item:before {
-    content: '';
-    display: inline-block;
-    vertical-align: middle;
-    width: 21px;
-    height: 21px; }
-  .contacts__phone {
-    background: #48cbe8; }
-    .contacts__phone:before {
-      background: url(../img/mobile.png) no-repeat left center; }
-  .contacts__mail {
-    background: #41b9d4; }
-    .contacts__mail:before {
-      background: url(../img/mail.png) no-repeat left center; }
-  .contacts__skype {
-    background: #51daf8; }
-    .contacts__skype:before {
-      background: url(../img/skype.png) no-repeat left center; }
+    font-size: 21px;
+    background: #3ba8c0;
+    padding: 5px 20px; }
+  .contacts__text {
+    margin-left: 80px; }
+  .contacts .contacts__mail {
+    background-color: #41b9d4;
+    padding: 5px 0; }
+  .contacts .contacts__phone {
+    background-color: #48cbe8;
+    padding: 5px 0; }
+  .contacts .contacts__skype {
+    background-color: #51daf8;
+    padding: 5px 0; }
   .contacts__link {
     text-decoration: none;
     color: #ffffff;
@@ -201,6 +196,16 @@ body {
     .contacts__link:hover {
       text-decoration: underline; }
 
+.contacts__mail {
+  background: url(../img/mail.png) 40px center no-repeat; }
+
+.contacts__phone {
+  background: url(../img/mobile.png) 40px center no-repeat; }
+
+.contacts__skype {
+  background: url(../img/skype.png) 40px center no-repeat; }
+
+/* Изменяемы контент */
 .page-content {
   width: 650px;
   float: right; }
@@ -220,7 +225,9 @@ body {
     border-bottom: 2px solid #3ba8c0;
     margin-bottom: 23px; }
   .about-me__list {
-    list-style: none; }
+    list-style: none;
+    margin: 0;
+    padding: 0; }
   .about-me__where {
     font-family: 'fira_sansbook';
     font-size: 17px; }
@@ -239,12 +246,13 @@ body {
     background: url(../img/doc.png) 22px center no-repeat; }
 
 /* Основная информация */
-.about-me__inner:before, .about-me__inner:after {
-  content: ' ';
-  display: table; }
-
-.about-me__inner:after {
-  clear: both; }
+.about-me__inner {
+  padding-bottom: 20px; }
+  .about-me__inner:before, .about-me__inner:after {
+    content: ' ';
+    display: table; }
+  .about-me__inner:after {
+    clear: both; }
 
 .image-wrap {
   float: left;

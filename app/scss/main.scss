@@ -124,6 +124,7 @@ body {
 			content : ' ';
 			display: block;
 			height: 3px;
+
 			background-image: linear-gradient(to right,rgba(28,102,122,0.9) 0,rgba(246,250,254,0.9) 0,rgba(216,216,216,0.9) 0,rgba(242,246,250,0.9) 0,rgba(28,102,122,0.9) 48%,rgba(242,246,250,0.9) 100%);
 		}
 		.logo__text {
@@ -235,68 +236,69 @@ body {
 }
 
 /* Контакты */
-
 .contacts {
-		color: $white-text;
-		overflow:hidden;
-		border-radius: 4px;
-		font-family: 'fira_sansbook';
+	background: $bg-color;
+	font-family: 'fira_sansbook';
+	font-size: 21px;
+	color: $white-text;
+	overflow: hidden;
+	border-radius: 5px;
+	margin-right: -10px;
+
+
+	&__list {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	&__title {
 		font-size: 21px;
-		&__list {
-			list-style: none;
-			padding: 0;
-			margin: 0;
-				}
-		&__title {
-			padding: 7px 0;
-			padding-left: 20px;
-			background: $title-color;
-				}
-		&__item {
-			//padding: 3px 30px;
-			&:before {
-			content:'';
-			display: inline-block;
-			vertical-align: middle;
-			width: 21px;
-			height: 21px;
-			//padding: 0px 20px;
-					}
-				}
-				&__phone {
-		background: $contact-phone-color;
-				&:before {
-					background: url(../img/mobile.png) no-repeat left center;
-						}
-				}
-		&__mail {
-		background: $contact-mail-color;
-				&:before {
-					background: url(../img/mail.png) no-repeat left center;
-						}
-				}
-		&__skype {
-		background: $contact-skype-color;
-				&:before {
-					background: url(../img/skype.png) no-repeat left center;
-						}
-				}
-		&__link {
+		background:$title-color;
+		padding: 5px 20px;
+	}
+	&__text {
+		margin-left: 80px;
+	}
 
-			text-decoration: none;
-			color: $white-text;
-			font-size: 17px;
-				&:hover {
-					text-decoration: underline;
-				}
-		}
+	.contacts__mail {
+		background-color:$contact-mail-color;
+		padding: 5px 0;
+	}
+	.contacts__phone {
+		background-color:$contact-phone-color;
+		padding: 5px 0;
+	}
+
+	.contacts__skype {
+		background-color:$contact-skype-color;
+		padding: 5px 0;
+	}
+
+	&__link {
+		text-decoration: none;
+		color:$white-text;
+		font-size: 17px;
+		&:hover { text-decoration: underline; }
+	}
 }
 
-.contacts_item.contacts__phone {
+.contacts__mail {
+		background: url(../img/mail.png) 40px center no-repeat;
+	}
+.contacts__phone {
+		background: url(../img/mobile.png) 40px center no-repeat;
+	}
+.contacts__skype {
+		background: url(../img/skype.png) 40px center no-repeat;
+	}
 
-}
 
 
+
+
+
+/* Изменяемы контент */
 
 .page-content {
 	width:650px;
@@ -319,6 +321,8 @@ body {
 		}
 		&__list {
 			list-style: none;
+			margin:0;
+			padding: 0;
 		}
 		&__where {
 			font-family: 'fira_sansbook';
@@ -350,6 +354,7 @@ body {
 /* Основная информация */
 .about-me__inner {
 		@include clearfix();
+		padding-bottom: 20px;
 }
 .image-wrap {
 	float: left;
