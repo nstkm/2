@@ -11,6 +11,14 @@
 }
 
 @font-face {
+	font-family: 'ProximaNovaCond';
+	src: url('../fonts/ProximaNova/ProximaNovaCond-Semibold.otf');
+	src: url('../fonts/ProximaNova/ProximaNovaCond-Semibold.otf?#iefix') format('embedded-opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
 	font-family: 'fira_sansbook';
 	src: url('../fonts/fira/firasans-book.eot');
 	src: url('../fonts/fira/firasans-book.eot?#iefix') format('embedded-opentype'),
@@ -294,6 +302,7 @@ body {
 	width:650px;
 	float: right;
 }
+/* Работа и Образование*/
 .about-me {
 	overflow: hidden;
 	background: $bg-color ;
@@ -306,6 +315,7 @@ body {
 		font-size: 27px;
 		padding: 14px 22px;
 		border-bottom: 2px solid $title-color;
+		margin-bottom: 23px;
 		}
 		&__list {
 			list-style: none;
@@ -338,6 +348,9 @@ body {
 }
 
 /* Основная информация */
+.about-me__inner {
+		@include clearfix();
+}
 .image-wrap {
 	float: left;
 	margin-left: 55px;
@@ -345,6 +358,8 @@ body {
 }
 
 	.avatar-box {
+		display: inline-block;
+		vertical-align: top;
 		overflow: hidden;
 		width: 145px;
 		height: 145px;
@@ -355,10 +370,18 @@ body {
 .worksheet {
 	float: right;
 	width: 420px;
+		&__list {
+			margin: 0;
+			padding: 0;
+			list-style:none;
+		}
 		&__item {
-			list-style: none;
+			margin-bottom: 9px;
+			vertical-align: bottom;
+			@include clearfix();
 		}
 		&__question {
+			float: left;
 			font-family: 'fira_sansmedium';
 			font-size: 17px;
 		}
@@ -367,12 +390,28 @@ body {
 			margin-left: 20px;
 			font-size: 15px;
 			overflow: hidden;
-			//float: left;
+			float: left;
 			max-width: 218px;
 		}
 }
-.skill__list {
-		display:inline-block;
+.skill {
+		&__list {
+		font-family: 'ProximaNovaCond';
+		list-style: none;
+		margin:0;
+		padding:0;
+		width:192px;
+		margin-bottom: 16px;
+	}
+		&__item {
+			border-radius: 2px;
+			padding: 0 7px;
+			margin: 0 6px 5px 0;
+			line-height: 1.2;
+			color: $white-text;
+			display: inline-block;
+			background: linear-gradient(bottom, rgb(46,140,162) 0%, rgb(46,140,162) 52%, rgb(59,168,192) 53%, rgb(59,168,192) 100%);
+		}
 }
 
 /* общий стиль */

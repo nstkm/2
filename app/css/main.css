@@ -7,6 +7,13 @@
   font-style: normal; }
 
 @font-face {
+  font-family: 'ProximaNovaCond';
+  src: url("../fonts/ProximaNova/ProximaNovaCond-Semibold.otf");
+  src: url("../fonts/ProximaNova/ProximaNovaCond-Semibold.otf?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
   font-family: 'fira_sansbook';
   src: url("../fonts/fira/firasans-book.eot");
   src: url("../fonts/fira/firasans-book.eot?#iefix") format("embedded-opentype"), url("../fonts/fira/firasans-book.woff") format("woff"), url("../fonts/fira/firasans-book.ttf") format("truetype");
@@ -198,6 +205,7 @@ body {
   width: 650px;
   float: right; }
 
+/* Работа и Образование*/
 .about-me {
   overflow: hidden;
   background: #eff3f7;
@@ -209,7 +217,8 @@ body {
     font-family: 'fira_sansbook';
     font-size: 27px;
     padding: 14px 22px;
-    border-bottom: 2px solid #3ba8c0; }
+    border-bottom: 2px solid #3ba8c0;
+    margin-bottom: 23px; }
   .about-me__list {
     list-style: none; }
   .about-me__where {
@@ -230,12 +239,21 @@ body {
     background: url(../img/doc.png) 22px center no-repeat; }
 
 /* Основная информация */
+.about-me__inner:before, .about-me__inner:after {
+  content: ' ';
+  display: table; }
+
+.about-me__inner:after {
+  clear: both; }
+
 .image-wrap {
   float: left;
   margin-left: 55px;
   margin-top: 20px; }
 
 .avatar-box {
+  display: inline-block;
+  vertical-align: top;
   overflow: hidden;
   width: 145px;
   height: 145px;
@@ -245,9 +263,20 @@ body {
 .worksheet {
   float: right;
   width: 420px; }
-  .worksheet__item {
+  .worksheet__list {
+    margin: 0;
+    padding: 0;
     list-style: none; }
+  .worksheet__item {
+    margin-bottom: 9px;
+    vertical-align: bottom; }
+    .worksheet__item:before, .worksheet__item:after {
+      content: ' ';
+      display: table; }
+    .worksheet__item:after {
+      clear: both; }
   .worksheet__question {
+    float: left;
     font-family: 'fira_sansmedium';
     font-size: 17px; }
   .worksheet__answer {
@@ -255,10 +284,26 @@ body {
     margin-left: 20px;
     font-size: 15px;
     overflow: hidden;
+    float: left;
     max-width: 218px; }
 
 .skill__list {
-  display: inline-block; }
+  font-family: 'ProximaNovaCond';
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 192px;
+  margin-bottom: 16px; }
+
+.skill__item {
+  border-radius: 2px;
+  padding: 0 7px;
+  margin: 0 6px 5px 0;
+  line-height: 1.2;
+  color: #ffffff;
+  display: inline-block;
+  background: -webkit-linear-gradient(bottom, #2e8ca2 0%, #2e8ca2 52%, #3ba8c0 53%, #3ba8c0 100%);
+  background: linear-gradient(bottom, #2e8ca2 0%, #2e8ca2 52%, #3ba8c0 53%, #3ba8c0 100%); }
 
 /* общий стиль */
 .container {
