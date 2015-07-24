@@ -333,19 +333,26 @@ body {
 			font-size: 15px;
 			line-height: 1;
 		}
+		&__inner {
+			padding-bottom: 20px;
+		}
 }
 
 
 .about-me {
 	.about-me__item {
 		padding-left: 85px;
+		margin-bottom: 20px;
 		&.work-icon {
+			margin-left: 43px;
 			background: url(../img/case.png) 16px center no-repeat;
 		}
 		&.college-icon {
+			margin-left: 43px;
 			background: url(../img/hat.png) 15px center no-repeat;
 		}
 		&.course-icon {
+			margin-left: 43px;
 			background: url(../img/doc.png) 22px center no-repeat;
 		}
 	}
