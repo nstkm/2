@@ -2,7 +2,7 @@
     jade = require('gulp-jade'),
     sass = require('gulp-sass'),
     rename = require('gulp-rename'),
-    prefix = require('gulp-autoprefixer')
+    //prefix = require('gulp-autoprefixer')
     browserSync = require('browser-sync'),
     reload = browserSync.reload;
 
@@ -37,7 +37,7 @@ gulp.src('app/jade/index.jade')
 gulp.task('css', function () {
         gulp.src('app/scss/main.scss')
         //.pipe(concatCss('app/css/style.css'))
-        .pipe(prefix('last 10 versions','>1%','ie 8'))
+        //.pipe(prefix('last 10 versions','>1%','ie 8'))
         .pipe(sass())
         //.pipe(minifyCss())
         .pipe(rename('main.css'))
