@@ -272,6 +272,9 @@ body {
   border-radius: 50% 50%;
   border: 5px solid #3ba8c0; }
 
+.avatar {
+  width: 100%; }
+
 .worksheet {
   float: right;
   width: 420px; }

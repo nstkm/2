@@ -1,5 +1,7 @@
 ﻿//Шрифты
 
+
+
 @font-face {
 	font-family: 'fira_sansregular';
 	src: url('../fonts/fira/firasans-regular.eot');
@@ -376,6 +378,10 @@ body {
 		height: 145px;
 		border-radius: 50% 50%;
 		border: 5px solid #3ba8c0;
+	}
+
+	.avatar {
+		width: 100%;
 	}
 
 .worksheet {

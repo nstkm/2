@@ -28,7 +28,7 @@ gulp.task('watch', function () {
 gulp.task('default', ['server', 'watch']);
 
 gulp.task('jade', function() {
-gulp.src('app/jade/index.jade')
+gulp.src('app/jade/*.jade')
 .pipe(jade({ pretty: true }))
 .pipe(gulp.dest('app/'))
 .pipe(reload({stream: true}));
@@ -37,13 +37,22 @@ gulp.src('app/jade/index.jade')
 gulp.task('css', function () {
         gulp.src('app/scss/main.scss')
         //.pipe(concatCss('app/css/style.css'))
-        //.pipe(prefix('last 10 versions','>1%','ie 8'))
+        //.pipe(prefix('last 10 versions','>1%','ie 7'))
         .pipe(sass())
         //.pipe(minifyCss())
         .pipe(rename('main.css'))
         .pipe(gulp.dest('app/css'))
         .pipe(reload({stream: true}));
         //.pipe(connect.reload());
+});
+
+// other css
+gulp.task('css2', function() {
+        gulp.src('app/scss/other/*.scss')
+        .pipe(sass())
+        .pipe(prefix('last 2 versions','>1%','ie 7'))
+        .pipe(gulp.dest('app/css'))
+        .pipe(reload({stream: true}));
 });
 
 //default
