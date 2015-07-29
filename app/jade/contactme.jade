@@ -30,11 +30,29 @@ body
 					section.contact-me
 						div.contact-me__title
 							div.contact-me__title-text У вас интересный проект? Напишите мне
-							div.form-wrapper
-								form.
-
-
-
+								form.contact__form(action='')
+									div.form__wrapper
+										div.form__name
+											label.form__label(for='name') Имя
+											input.form__input(id='name' , type='text' , placeholder='Как к Вам обращаться')
+										div.form__mail
+											label.form__label(for='mail') Email
+											input.form__input(id='mail' , type='email' , placeholder='Куда мне писать')
+									div.form__wrapper
+										label.form__label(for='message') Сообщение
+										textarea.form__text(id='message' , placeholder='Кратко в чем суть')
+									div.form__wrapper
+										label.form__label(for='captcha') Введите код, указанный на картинке
+											div.form__captcha
+												img.form__captcha-img(src='img/captcha.png' alt='captcha')
+											div.captcha__code
+												label.form__label(for='captcha')
+												input.captcha__code-text(type='text' placeholder='Введите код' id='captcha')
+									div.form__wrapper
+										div.form__btn-submit
+											button.btn-submit(type="submit" value='Отправить')
+										div.form__btn-reset
+											button.btn-reset(type="reset" value='Очистить')
 include ./components/footer.jade
 script(src="bower_components/jquery/jquery.js")
 script(src="js/main.js")
