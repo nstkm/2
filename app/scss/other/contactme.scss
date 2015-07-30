@@ -1,3 +1,64 @@
-﻿.contact-me__title-text {
-		color: #48cbe8;
+﻿@import '../variables.scss';
+@import '../mixins.scss';
+
+@font-face {
+	font-family: 'fira_sanslight';
+	src: url('../fonts/fira/firasans-light.eot');
+	src: url('../fonts/fira/firasans-light.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/fira/firasans-light.woff') format('woff'),
+	url('../fonts/fira/firasans-light.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'fira_sansbook';
+	src: url('../fonts/fira/firasans-book.eot');
+	src: url('../fonts/fira/firasans-book.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/fira/firasans-book.woff') format('woff'),
+	url('../fonts/fira/firasans-book.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+/* Связаться со мной */
+.contact-me {
+		min-height: 841px;
+		background: $bg-color;
+		margin-bottom: 35px;
+		overflow: hidden;
+	&__title {
+		background: $form-color;
+		border-radius: 4px;
+		margin-bottom: 45px;
+		&-text {
+				color: $white-text;
+				font-size: 27px;
+				padding: 39px 0 39px 48px;
+				border-bottom: 17px solid $form-title-line;
+				font-family:'fira_sansbook' ;
+		}
 	}
+}
+
+.contact__form {
+	margin: 0 auto;
+	width: 400px;
+	font-family:'fira_sanslight' ;
+}
+
+.form {
+	&__label {
+			color: $form-color-label;
+			font-size: 19px;
+			display: block;
+	}
+	&__input {
+			color: $form-color;
+			border-radius: 4px;
+			border: 1px solid $form-color;
+			width: 190px;
+
+	}
+}
+
+
