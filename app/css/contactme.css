@@ -4,9 +4,8 @@
 
 /* Связаться со мной */
 .contact-me {
-  min-height: 841px;
   background: #eff3f7;
-  margin-bottom: 35px;
+  margin-bottom: 39px;
   overflow: hidden; }
   .contact-me__title {
     background: #48cbe8;
@@ -36,8 +35,8 @@
   font-size: 13px;
   color: #48cbe8;
   outline: none;
-  padding: 8px;
-  width: 100%; }
+  width: 100%;
+  padding: 8px; }
 
 .form__text {
   font-size: 13px;
@@ -62,11 +61,23 @@
   border-radius: 3px;
   border: 1px solid #48cbe8;
   width: 48%;
-  float: left; }
+  float: left;
+  text-align: center;
+  height: 80px;
+  line-height: 80px; }
+  .form__captcha-img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 80%; }
 
 .captcha__code {
   float: right;
-  width: 48%; }
+  width: 48%;
+  line-height: 80px; }
+  .captcha__code-text {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 4px 0 4px 6px; }
 
 .form__name {
   float: left;
@@ -91,27 +102,29 @@
   color: #ffffff;
   border: none;
   outline: none;
-  border-radius: 3px;
+  border-radius: 4px;
   padding: 0 22px;
   transition: top 0.1s linear, box-shadow 0.1s linear; }
-  .form__btn .btn-submit {
-    background: #48cbe8;
-    box-shadow: 0 2px #3ba8c0; }
-    .form__btn .btn-submit:hover {
-      box-shadow: 0px 0px #3ba8c0;
-      top: 4px; }
-    .form__btn .btn-submit:active {
-      box-shadow: 0px -2px #3ba8c0;
-      top: 8px; }
-  .form__btn .btn-reset {
-    background: #849db5;
-    box-shadow: 0 2px #687b8f; }
-    .form__btn .btn-reset:hover {
-      box-shadow: 0px 0px #687b8f;
-      top: 4px; }
-    .form__btn .btn-reset:active {
-      box-shadow: 0px -2px #687b8f;
-      top: 8px; }
+
+.btn-submit {
+  background: #48cbe8;
+  box-shadow: 0 2px #3ba8c0; }
+  .btn-submit:hover {
+    box-shadow: 0px 0px #3ba8c0;
+    top: 2px; }
+  .btn-submit:active {
+    box-shadow: 0px -2px #3ba8c0;
+    top: 4px; }
+
+.btn-reset {
+  background: #849db5;
+  box-shadow: 0 2px #687b8f; }
+  .btn-reset:hover {
+    box-shadow: 0px 0px #687b8f;
+    top: 2px; }
+  .btn-reset:active {
+    box-shadow: 0px -2px #687b8f;
+    top: 4px; }
 
 .form__input::-webkit-input-placeholder {
   color: #48cbe8;

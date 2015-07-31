@@ -4,9 +4,8 @@
 
 /* Связаться со мной */
 .contact-me {
-		min-height: 841px;
 		background: $bg-color;
-		margin-bottom: 35px;
+		margin-bottom: 39px;
 		overflow: hidden;
 	&__title {
 		background: $form-color;
@@ -42,8 +41,8 @@
 			font-size: 13px;
 			color: $form-color;
 			outline: none;
-			padding: 8px;
 			width: 100%;
+			padding: 8px;
 
 	}
 		&__text {
@@ -66,8 +65,13 @@
 			border: 1px solid $form-color;
 			width:48%;
 			float: left;
+			text-align: center;
+			height: 80px;
+			line-height: 80px;
 			&-img {
-
+			display: inline-block;
+			vertical-align: middle;
+			width: 80%;
 			}
 	}
 }
@@ -75,6 +79,12 @@
 .captcha__code {
 		float: right;
 		width: 48%;
+		line-height: 80px;
+		&-text {
+			display: inline-block;
+			vertical-align: middle;
+			padding: 4px 0 4px 6px;
+		}
 }
 .form__name {
 	float: left;
@@ -102,20 +112,21 @@
 				color: $white-text;
 				border: none;
 				outline: none;
-				border-radius: 3px;
+				border-radius: 4px;
 				padding: 0 22px;
 				transition: top .1s linear,box-shadow .1s linear;
+			}
 				.btn {
 		&-submit {
 				background: $btn-enter-color;
 				box-shadow: 0 2px $btn-blue-shadow;
 				&:hover {
 					box-shadow: 0px 0px $btn-blue-shadow;
-					top: 4px;
+					top: 2px;
 				}
 				&:active {
 				box-shadow: 0px -2px $btn-blue-shadow;
-				top: 8px;
+				top: 4px;
 				}
 		}
 		&-reset {
@@ -123,15 +134,15 @@
 				box-shadow: 0 2px $btn-reset-shadow;
 				&:hover {
 					box-shadow: 0px 0px $btn-reset-shadow;
-					top: 4px;
+					top: 2px;
 				}
 				&:active {
 				box-shadow: 0px -2px $btn-reset-shadow;
-				top: 8px;
+				top: 4px;
 				}
 		}
 }
-}
+
 
 
 
