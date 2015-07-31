@@ -2,18 +2,21 @@
 html(lang="ru-Ru")
 		include ./components/head.jade
 body
-		div.login-content
-			div.login__title
-				div.login__title-text Авторизируйтесь
-			form.login__form(action='')
-				div.login__wrapper
-					label.login__label(for='login')
-					input(id='login' type='text' placeholder='Введите логин')
-				div.login__wrapper
-					label.login__label(for='password')
-					input(id='password' type='password' placeholder='Введите пароль')
-				div.login__btn
-					button.login__btn-enter(type='submit' value='Войти')
+	div.wrapper.login
+		div.login-page
+			div.login-content
+				div.login__title
+					div.login__title-text Авторизируйтесь
+				form.login__form(action='')
+					div.login__big-wrapper
+						div.login__wrapper
+							label.login__label(for='login') Логин
+							input.login__input(id='login' type='text' placeholder='Введите логин')
+						div.login__wrapper
+							label.login__label(for='password') Пароль
+							input.login__input(id='password' type='password' placeholder='Введите пароль')
+						div.login__btn
+							button.login__btn-enter(type='submit') Войти
 
 include ./components/footer.jade
 script(src="bower_components/jquery/jquery.js")

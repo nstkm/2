@@ -1,5 +1,6 @@
 ﻿@import '../variables.scss';
 @import '../mixins.scss';
+* { box-sizing: border-box }
 
 @font-face {
 	font-family: 'fira_sanslight';
@@ -44,31 +45,25 @@
 	margin: 0 auto;
 	width: 405px;
 	font-family:'fira_sanslight' ;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
+	font-size: 0;
 }
 
 .form {
-		&.form__name {
-				margin-right: 18px;
-				display: inline-block;
-				width:100%;
-				vertical-align: top;
-		}
 	&__label{
 			font-size: 19px;
 			color: $form-color-label;
+			display: block;
 
 	}
 	&__input  {
 			border-radius: 3px;
 			border: 1px solid $form-color;
-			width: 187px;
 			font-size: 13px;
 			color: $form-color;
 			outline: none;
 			padding: 8px;
-			display: inline-block;
+			width: 100%;
+
 	}
 		&__text {
 			font-size: 13px;
@@ -81,21 +76,33 @@
 			line-height: 16px;
 		}
 	&__wrapper {
-		margin-bottom: 18px;
+		@include clearfix();
+		margin-bottom: 15px;
 	}
 	&__captcha {
 			background: $white-text;
 			border-radius: 3px;
 			border: 1px solid $form-color;
+			width:48%;
 			&-img {
 				padding:15px;
 			}
 
 	}
 }
+.form__name {
+	float: left;
+	width: 48%;
+}
+.form__email {
+	float: right;
+	width: 48%;
+}
 
-input::-webkit-input-placeholder { color: $form-color; font-size: 13px;}
-input:-moz-placeholder {color: $form-color; font-size: 13px;}
+
+
+.form__input::-webkit-input-placeholder { color: $form-color; font-size: 13px;}
+.form__input:-moz-placeholder {color: $form-color; font-size: 13px;}
 textarea::-webkit-input-placeholder {line-height: 16px; color: $form-color; font-size: 13px;}
 textarea:-moz-placeholder {line-height: 16px; color: $form-color; font-size: 13px;}
 

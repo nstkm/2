@@ -1,3 +1,99 @@
 ﻿@import '../variables.scss';
 @import '../mixins.scss';
 
+.wrapper.login {
+	min-width: 100%;
+	min-height: 100%;
+	position: relative;
+	display: table;
+	height: auto!important ;
+
+}
+.login{
+			&-page {
+				display: table-cell;
+				vertical-align: middle;
+				padding-bottom: 81px;
+			}
+			&-content {
+				overflow: hidden;
+				margin: 0 auto;
+				width: 90%;
+				text-align: center;
+				background: $bg-color;
+				max-width: 590px;
+				box-shadow: 0 4px 7px 1px rgba(13,16,7,.3);
+				border-radius: 4px;
+				padding-bottom: 30px;
+			}
+			&__title {
+				margin-bottom: 11px;
+				background: $form-color;
+						&-text {
+						color: $white-text;
+						font-size: 40px;
+						text-align: center;
+						border-bottom: 15px solid $form-title-line;
+						font-family:'fira_sansbook' ;
+						padding: 20px 0;
+				}
+			}
+			&__form {
+				font-family: 'fira_sanslight' ;
+			}
+			&__label {
+					font-size: 36px;
+					display: block;
+					color: $form-color-label;
+					text-align: center;
+			}
+			&__input {
+				width: 100%;
+				border-radius: 3px;
+				border: 1px solid $form-color;
+				font-size: 17px;
+				color: $form-color;
+				outline: none;
+				padding: 15px;
+				line-height: 27px;
+			}
+			&__wrapper {
+				margin-bottom: 9px;
+			}
+}
+
+.login__btn {
+		margin-top: 20px;
+		min-width: 225px;
+		height: 50px;
+		margin: 0 auto;
+			&-enter{
+				position: relative;
+				top:0;
+				background: $btn-enter-color;
+				box-shadow: 0 4px $btn-blue-shadow;
+				font-size: 36px;
+				color: $white-text;
+				border: none;
+				outline: none;
+				border-radius: 6px;
+				padding: 0 65px;
+				transition: top .1s linear,box-shadow .1s linear;
+				&:hover {
+					box-shadow: 0px 0px $btn-blue-shadow;
+					top: 4px;
+				}
+				&:active {
+				box-shadow: 0px -4px $btn-blue-shadow;
+				top: 8px;
+				}
+
+			}
+}
+.login__big-wrapper {
+	margin: 0 auto;
+	width: 425px;
+}
+
+.login__input::-webkit-input-placeholder { color: $form-color; font-size: 17px;}
+.login__input:-moz-placeholder {color: $form-color; font-size: 17px;}
