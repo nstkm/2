@@ -42,23 +42,62 @@
 
 .contact__form {
 	margin: 0 auto;
-	width: 400px;
+	width: 405px;
 	font-family:'fira_sanslight' ;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 .form {
-	&__label {
-			color: $form-color-label;
+		&.form__name {
+				margin-right: 18px;
+				display: inline-block;
+				width:100%;
+				vertical-align: top;
+		}
+	&__label{
 			font-size: 19px;
-			display: block;
+			color: $form-color-label;
+
 	}
-	&__input {
-			color: $form-color;
-			border-radius: 4px;
+	&__input  {
+			border-radius: 3px;
 			border: 1px solid $form-color;
-			width: 190px;
+			width: 187px;
+			font-size: 13px;
+			color: $form-color;
+			outline: none;
+			padding: 8px;
+			display: inline-block;
+	}
+		&__text {
+			font-size: 13px;
+			color: $form-color;
+			width: 100%;
+			border-radius: 3px;
+			border: 1px solid $form-color;
+			padding: 8px;
+			outline: none;
+			line-height: 16px;
+		}
+	&__wrapper {
+		margin-bottom: 18px;
+	}
+	&__captcha {
+			background: $white-text;
+			border-radius: 3px;
+			border: 1px solid $form-color;
+			&-img {
+				padding:15px;
+			}
 
 	}
 }
+
+input::-webkit-input-placeholder { color: $form-color; font-size: 13px;}
+input:-moz-placeholder {color: $form-color; font-size: 13px;}
+textarea::-webkit-input-placeholder {line-height: 16px; color: $form-color; font-size: 13px;}
+textarea:-moz-placeholder {line-height: 16px; color: $form-color; font-size: 13px;}
+
 
 
