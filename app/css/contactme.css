@@ -6,7 +6,8 @@
 .contact-me {
   background: #eff3f7;
   margin-bottom: 39px;
-  overflow: hidden; }
+  overflow: hidden;
+  min-height: 840px; }
   .contact-me__title {
     background: #48cbe8;
     border-radius: 4px;
