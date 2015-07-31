@@ -53,6 +53,8 @@
 
 .login__wrapper {
   margin-bottom: 9px; }
+  .login__wrapper-password {
+    margin-bottom: 34px; }
 
 .login__btn {
   margin-top: 20px;
