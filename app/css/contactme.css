@@ -2,20 +2,6 @@
 * {
   box-sizing: border-box; }
 
-@font-face {
-  font-family: 'fira_sanslight';
-  src: url("../fonts/fira/firasans-light.eot");
-  src: url("../fonts/fira/firasans-light.eot?#iefix") format("embedded-opentype"), url("../fonts/fira/firasans-light.woff") format("woff"), url("../fonts/fira/firasans-light.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'fira_sansbook';
-  src: url("../fonts/fira/firasans-book.eot");
-  src: url("../fonts/fira/firasans-book.eot?#iefix") format("embedded-opentype"), url("../fonts/fira/firasans-book.woff") format("woff"), url("../fonts/fira/firasans-book.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-
 /* Связаться со мной */
 .contact-me {
   min-height: 841px;
@@ -75,9 +61,12 @@
   background: #ffffff;
   border-radius: 3px;
   border: 1px solid #48cbe8;
+  width: 48%;
+  float: left; }
+
+.captcha__code {
+  float: right;
   width: 48%; }
-  .form__captcha-img {
-    padding: 15px; }
 
 .form__name {
   float: left;
@@ -86,6 +75,43 @@
 .form__email {
   float: right;
   width: 48%; }
+
+.form__btn-submit {
+  float: left; }
+
+.form__btn-reset {
+  float: right; }
+
+.form__btn {
+  min-width: 137px;
+  height: 31px;
+  position: relative;
+  top: 0;
+  font-size: 19px;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  padding: 0 22px;
+  transition: top 0.1s linear, box-shadow 0.1s linear; }
+  .form__btn .btn-submit {
+    background: #48cbe8;
+    box-shadow: 0 2px #3ba8c0; }
+    .form__btn .btn-submit:hover {
+      box-shadow: 0px 0px #3ba8c0;
+      top: 4px; }
+    .form__btn .btn-submit:active {
+      box-shadow: 0px -2px #3ba8c0;
+      top: 8px; }
+  .form__btn .btn-reset {
+    background: #849db5;
+    box-shadow: 0 2px #687b8f; }
+    .form__btn .btn-reset:hover {
+      box-shadow: 0px 0px #687b8f;
+      top: 4px; }
+    .form__btn .btn-reset:active {
+      box-shadow: 0px -2px #687b8f;
+      top: 8px; }
 
 .form__input::-webkit-input-placeholder {
   color: #48cbe8;

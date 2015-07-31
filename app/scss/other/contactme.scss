@@ -2,25 +2,6 @@
 @import '../mixins.scss';
 * { box-sizing: border-box }
 
-@font-face {
-	font-family: 'fira_sanslight';
-	src: url('../fonts/fira/firasans-light.eot');
-	src: url('../fonts/fira/firasans-light.eot?#iefix') format('embedded-opentype'),
-	url('../fonts/fira/firasans-light.woff') format('woff'),
-	url('../fonts/fira/firasans-light.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'fira_sansbook';
-	src: url('../fonts/fira/firasans-book.eot');
-	src: url('../fonts/fira/firasans-book.eot?#iefix') format('embedded-opentype'),
-	url('../fonts/fira/firasans-book.woff') format('woff'),
-	url('../fonts/fira/firasans-book.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
 /* Связаться со мной */
 .contact-me {
 		min-height: 841px;
@@ -84,11 +65,16 @@
 			border-radius: 3px;
 			border: 1px solid $form-color;
 			width:48%;
+			float: left;
 			&-img {
-				padding:15px;
-			}
 
+			}
 	}
+}
+
+.captcha__code {
+		float: right;
+		width: 48%;
 }
 .form__name {
 	float: left;
@@ -98,6 +84,55 @@
 	float: right;
 	width: 48%;
 }
+.form__btn {
+	&-submit {
+		float:left;
+	}
+	&-reset {
+		float:right;
+	}
+}
+
+.form__btn {
+				min-width: 137px;
+				height: 31px;
+				position: relative;
+				top:0;
+				font-size: 19px;
+				color: $white-text;
+				border: none;
+				outline: none;
+				border-radius: 3px;
+				padding: 0 22px;
+				transition: top .1s linear,box-shadow .1s linear;
+				.btn {
+		&-submit {
+				background: $btn-enter-color;
+				box-shadow: 0 2px $btn-blue-shadow;
+				&:hover {
+					box-shadow: 0px 0px $btn-blue-shadow;
+					top: 4px;
+				}
+				&:active {
+				box-shadow: 0px -2px $btn-blue-shadow;
+				top: 8px;
+				}
+		}
+		&-reset {
+				background: $btn-reset-color;
+				box-shadow: 0 2px $btn-reset-shadow;
+				&:hover {
+					box-shadow: 0px 0px $btn-reset-shadow;
+					top: 4px;
+				}
+				&:active {
+				box-shadow: 0px -2px $btn-reset-shadow;
+				top: 8px;
+				}
+		}
+}
+}
+
 
 
 
