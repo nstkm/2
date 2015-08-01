@@ -71,29 +71,31 @@ body
 																	| очень много информации
 																	| очень очень много
 								li.mywork__item.add-new-item
-									a.mywork__link.mywork__link-add(href='#' id='add-new-item')
-										span.mywork__add-text Добавить проект
+									.mywork__add(id='add-new-item')
+										a.mywork__link.mywork__link-add(href='#')
+											span.mywork__add-text Добавить проект
 
-/* Модальное окно - Popup*/
-div.popup
+// Модальное окно - Popup
+div.popup(id='new-project-popup')
 	div.popup-content
 		div.popup__title
-			div.popup__title-text
+			.popup__title-text Добавление проекта
+			a.popup__close.b-close(href='#')
 		form.popup-form(action='')
 			.popup-wrapper
 				label.popup__label(for="project-name") Название проекта
 				input.popup__input(id='project-name' type='text' placeholder='Введите название')
-			.popup-wrapper
-				label.popup__label(for="project-img") Картинка проекта
-				input.popup__input(id='project-img' type='text' placeholder='Загрузите изображение')
+			.popup-wrapper.upload
+				label.popup__label.upload-label(for="project-img") Картинка проекта
+				input.popup__input.upload-input(id='project-img' type='text' placeholder='Загрузите изображение')
 			.popup-wrapper
 				label.popup__label(for="project-url") URL проекта
 				input.popup__input(id='project-url' type='text' placeholder='Добавьте ссылку')
 			.popup-wrapper.textarea
 				label.popup__label(for="project-text") Описание
-				teztarea.popup__text(id='project-text' type='text' rows='3' placeholder='Пара слов о вашем проекте')
+				textarea.popup__text(id='project-text' type='text' rows='6' placeholder='Пара слов о вашем проекте')
 			.popup__btn
-				button.popup_btn-add(type='submit') Добавить
+				button.form__btn.btn-submit(type='submit') Добавить
 
 
 
@@ -103,4 +105,5 @@ div.popup
 
 include ./components/footer.jade
 script(src="bower_components/jquery/jquery.js")
+script(src="bower_components/bpopup/jquery.bpopup.js")
 script(src="js/main.js")

@@ -1,4 +1,4 @@
-﻿var gulp = require("gulp"),
+var gulp = require("gulp"),
 	jade = require('gulp-jade'),
 	sass = require('gulp-sass'),
 	rename = require('gulp-rename'),

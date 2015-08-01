@@ -95,27 +95,30 @@
                   </div>
                 </div>
               </li>
-              <li class="mywork__item add-new-item"><a href="#" id="add-new-item" class="mywork__link mywork__link-add"><span class="mywork__add-text">Добавить проект</span></a></li>
+              <li class="mywork__item add-new-item">
+                <div id="add-new-item" class="mywork__add"><a href="#" class="mywork__link mywork__link-add"><span class="mywork__add-text">Добавить проект</span></a></div>
+              </li>
             </ul>
           </div>
         </section>
       </article>
     </div>
   </div>
-</body>/* Модальное окно - Popup*/
-<div class="popup">
+</body>
+<!-- Модальное окно - Popup-->
+<div id="new-project-popup" class="popup">
   <div class="popup-content">
     <div class="popup__title">
-      <div class="popup__title-text"></div>
+      <div class="popup__title-text">Добавление проекта</div><a href="#" class="popup__close b-close"></a>
     </div>
     <form action="" class="popup-form">
       <div class="popup-wrapper">
         <label for="project-name" class="popup__label">Название проекта</label>
         <input id="project-name" type="text" placeholder="Введите название" class="popup__input"/>
       </div>
-      <div class="popup-wrapper">
-        <label for="project-img" class="popup__label">Картинка проекта</label>
-        <input id="project-img" type="text" placeholder="Загрузите изображение" class="popup__input"/>
+      <div class="popup-wrapper upload">
+        <label for="project-img" class="popup__label upload-label">Картинка проекта</label>
+        <input id="project-img" type="text" placeholder="Загрузите изображение" class="popup__input upload-input"/>
       </div>
       <div class="popup-wrapper">
         <label for="project-url" class="popup__label">URL проекта</label>
@@ -123,10 +126,10 @@
       </div>
       <div class="popup-wrapper textarea">
         <label for="project-text" class="popup__label">Описание</label>
-        <teztarea id="project-text" type="text" rows="3" placeholder="Пара слов о вашем проекте" class="popup__text"></teztarea>
+        <textarea id="project-text" type="text" rows="6" placeholder="Пара слов о вашем проекте" class="popup__text"></textarea>
       </div>
       <div class="popup__btn">
-        <button type="submit" class="popup_btn-add">Добавить</button>
+        <button type="submit" class="form__btn btn-submit">Добавить</button>
       </div>
     </form>
   </div>
@@ -139,4 +142,5 @@
 </footer>
 <!-- FOOTER-->
 <script src="bower_components/jquery/jquery.js"></script>
+<script src="bower_components/bpopup/jquery.bpopup.js"></script>
 <script src="js/main.js"></script>
