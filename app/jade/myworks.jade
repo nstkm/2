@@ -27,7 +27,79 @@ body
 									span.contacts__text nstkmkm
 				article.page-content
 					section.about-me
-						div.about-me__title
+						div.about-me__title Мои работы
+						div.mywork-container
+							ul.mywork__list
+								li.mywork__item
+									div.mywork__image-wrap
+										img.mywork__image(alt='www.site.ru' src='img/myworks.jpg')
+										a.mywork__link(href='#' target='_blank')
+											span.mywork__name название
+									div.mywork__description
+										a.mywork__description-link(href='#' target='_blank') www.site.ru
+										div.mywork__description-info Информация о 1 проекте
+																	| очень много информации
+																	| очень очень много
+								li.mywork__item
+									div.mywork__image-wrap
+										img.mywork__image(alt='www.site.ru' src='img/myworks.jpg')
+										a.mywork__link(href='#' target='_blank')
+											span.mywork__name название
+									div.mywork__description
+										a.mywork__description-link(href='#' target='_blank') www.site.ru
+										div.mywork__description-info Информация о 2 проекте
+																	| очень много информации
+																	| очень очень много
+								li.mywork__item
+									div.mywork__image-wrap
+										img.mywork__image(alt='www.site.ru' src='img/myworks.jpg')
+										a.mywork__link(href='#' target='_blank')
+											span.mywork__name название
+									div.mywork__description
+										a.mywork__description-link(href='#' target='_blank') www.site.ru
+										div.mywork__description-info Информация о 3 проекте
+																	| очень много информации
+																	| очень очень много
+								li.mywork__item
+									div.mywork__image-wrap
+										img.mywork__image(alt='www.site.ru' src='img/myworks.jpg')
+										a.mywork__link(href='#' id target='_blank')
+											span.mywork__name название
+									div.mywork__description
+										a.mywork__description-link(href='#' target='_blank') www.site.ru
+										div.mywork__description-info Информация о 4 проекте
+																	| очень много информации
+																	| очень очень много
+								li.mywork__item.add-new-item
+									a.mywork__link.mywork__link-add(href='#' id='add-new-item')
+										span.mywork__add-text Добавить проект
+
+/* Модальное окно - Popup*/
+div.popup
+	div.popup-content
+		div.popup__title
+			div.popup__title-text
+		form.popup-form(action='')
+			.popup-wrapper
+				label.popup__label(for="project-name") Название проекта
+				input.popup__input(id='project-name' type='text' placeholder='Введите название')
+			.popup-wrapper
+				label.popup__label(for="project-img") Картинка проекта
+				input.popup__input(id='project-img' type='text' placeholder='Загрузите изображение')
+			.popup-wrapper
+				label.popup__label(for="project-url") URL проекта
+				input.popup__input(id='project-url' type='text' placeholder='Добавьте ссылку')
+			.popup-wrapper.textarea
+				label.popup__label(for="project-text") Описание
+				teztarea.popup__text(id='project-text' type='text' rows='3' placeholder='Пара слов о вашем проекте')
+			.popup__btn
+				button.popup_btn-add(type='submit') Добавить
+
+
+
+
+
+
 
 include ./components/footer.jade
 script(src="bower_components/jquery/jquery.js")

@@ -17,6 +17,16 @@
 }
 
 @font-face {
+    font-family: 'fira_sanslightItalic';
+    src: url('../fonts/fira/firasans-lightitalic.eot');
+    src: url('../fonts/fira/firasans-lightitalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/fira/firasans-lightitalic.woff') format('woff'),
+    url('../fonts/fira/firasans-lightitalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'fira_sansbook';
     src: url('../fonts/fira/firasans-book.eot');
     src: url('../fonts/fira/firasans-book.eot?#iefix') format('embedded-opentype'),
