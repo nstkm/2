@@ -227,8 +227,9 @@
 }
 
 
-/*
-.upload-image{
+
+.upload-image:after{
+	content: ' ';
 		cursor: pointer;
 		position: absolute;
 		overflow: hidden;
@@ -238,10 +239,7 @@
 		right: 0;
 		top: 0;
 			}
-.upload-label {
-	position: relative;
-}
-*/
+
 
 .popup__input::-webkit-input-placeholder { color: $form-color; font-size: 13px;}
 .popup__input:-moz-placeholder {color: $form-color; font-size: 13px;}

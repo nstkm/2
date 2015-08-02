@@ -197,21 +197,17 @@
   position: relative;
   cursor: pointer; }
 
-/*
-.upload-image{
-		cursor: pointer;
-		position: absolute;
-		overflow: hidden;
-		width: 52px;
-		height: 100%;
-		background: url(../img/download.png) 50% 50% no-repeat $form-color;
-		right: 0;
-		top: 0;
-			}
-.upload-label {
-	position: relative;
-}
-*/
+.upload-image:after {
+  content: ' ';
+  cursor: pointer;
+  position: absolute;
+  overflow: hidden;
+  width: 52px;
+  height: 100%;
+  background: url(../img/download.png) 50% 50% no-repeat #48cbe8;
+  right: 0;
+  top: 0; }
+
 .popup__input::-webkit-input-placeholder {
   color: #48cbe8;
   font-size: 13px; }
