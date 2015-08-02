@@ -72,7 +72,7 @@ body
 																	| очень очень много
 								li.mywork__item.add-new-item
 									.mywork__add(id='add-new-item')
-										a.mywork__link.mywork__link-add(href='#')
+										a.mywork__link-add(href='#')
 											span.mywork__add-text Добавить проект
 
 // Модальное окно - Popup
@@ -85,9 +85,10 @@ div.popup(id='new-project-popup')
 			.popup-wrapper
 				label.popup__label(for="project-name") Название проекта
 				input.popup__input(id='project-name' type='text' placeholder='Введите название')
-			.popup-wrapper.upload
-				label.popup__label.upload-label(for="project-img") Картинка проекта
-				input.popup__input.upload-input(id='project-img' type='text' placeholder='Загрузите изображение')
+			.popup-wrapper
+				label.popup__label(for="project-img") Картинка проекта
+				.upload-image
+					input.popup__input.upload-input(id='project-img' type='file' placeholder='Загрузите изображение')
 			.popup-wrapper
 				label.popup__label(for="project-url") URL проекта
 				input.popup__input(id='project-url' type='text' placeholder='Добавьте ссылку')
