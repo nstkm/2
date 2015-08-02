@@ -87,8 +87,8 @@ div.popup(id='new-project-popup')
 				input.popup__input(id='project-name' type='text' placeholder='Введите название')
 			.popup-wrapper
 				label.popup__label(for="project-img") Картинка проекта
-				.upload-image
-					input.popup__input.upload-input(id='project-img' type='file' placeholder='Загрузите изображение')
+					input.popup__input-hide(id='project-img' type='file')
+					.popup__input.upload-image Загрузите изображение
 			.popup-wrapper
 				label.popup__label(for="project-url") URL проекта
 				input.popup__input(id='project-url' type='text' placeholder='Добавьте ссылку')

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box; }
 
@@ -120,6 +121,7 @@
     margin-bottom: 10px;
     background: url(../img/add_project.png) center no-repeat; }
 
+/* Модальное окно */
 .popup {
   display: none;
   width: 362px;
@@ -174,6 +176,10 @@
 .textarea {
   margin-bottom: 15px; }
 
+.popup__input-hide {
+  overflow: hidden;
+  display: none; }
+
 .popup__input {
   width: 100%;
   border-radius: 3px;
@@ -185,7 +191,11 @@
   line-height: 21px; }
 
 .upload-image {
-  position: relative; }
+  height: 40px;
+  background: #fff;
+  color: #48cbe8;
+  position: relative;
+  cursor: pointer; }
 
 /*
 .upload-image{
