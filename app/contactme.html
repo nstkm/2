@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="css/style.css"/>
     <!-- MODERNIZR-->
     <script src="bower_components/modernizr/modernizr.js"></script>
+    <!-- qtip-->
+    <link rel="stylesheet" href="bower_components/qtip2/jquery.qtip.css"/>
   </head>
 </html>
 <body>
@@ -56,27 +58,27 @@
           <div class="contact-me__title">
             <div class="contact-me__title-text">У вас интересный проект? Напишите мне</div>
           </div>
-          <form action="" class="contact__form">
+          <form id="contact-me" class="contact__form">
             <div class="form__wrapper">
               <div class="form__name">
                 <label for="name" class="form__label">Имя</label>
-                <input id="name" type="text" name="name" placeholder="Как к Вам обращаться" class="form__input"/>
+                <input id="name" type="text" name="name" placeholder="Как к Вам обращаться" qtip-content="Вы не ввели имя" qtip-position="left" class="form__input"/>
               </div>
               <div class="form__email">
                 <label for="mail" class="form__label">Email</label>
-                <input id="mail" type="email" name="email" placeholder="Куда мне писать" class="form__input"/>
+                <input id="mail" type="email" name="email" placeholder="Куда мне писать" qtip-content="Вы не ввели email" qtip-position="right" class="form__input"/>
               </div>
             </div>
             <div class="form__wrapper">
               <label for="message" class="form__label">Сообщение</label>
-              <textarea id="message" rows="10" placeholder="Кратко в чем суть" class="form__text"></textarea>
+              <textarea id="message" rows="10" placeholder="Кратко в чем суть" qtip-content="Ваш вопрос" qtip-position="left" class="form__text"></textarea>
             </div>
             <div class="form__wrapper">
               <label for="captcha" class="form__label">Введите код, указанный на картинке
                 <div class="form__captcha"><img src="img/captcha.png" alt="captcha" class="form__captcha-img"/></div>
                 <div class="captcha__code">
                   <label for="captcha" class="form__label"></label>
-                  <input type="text" placeholder="Введите код" id="captcha" class="form__input captcha__code-text"/>
+                  <input type="text" placeholder="Введите код" id="captcha" qtip-content="Вы не ввели код" qtip-position="right" class="form__input captcha__code-text"/>
                 </div>
               </label>
             </div>
@@ -102,5 +104,7 @@
 </footer>
 <!-- FOOTER-->
 <script src="/bower_components/jquery/jquery.js"></script>
-<script src="/bower_components/jquery/jquery.js"></script>
-<script src="js/main.js"></script>
+<script src="/bower_components/qtip2/jquery.qtip.js"></script>
+<script src="/bower_components/jquery-placeholder/jquery.placeholder.js"></script>
+<script src="js/contact.js"></script>
+<script src="js/valid.js"></script>

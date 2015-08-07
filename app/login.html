@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="css/style.css"/>
     <!-- MODERNIZR-->
     <script src="bower_components/modernizr/modernizr.js"></script>
+    <!-- qtip-->
+    <link rel="stylesheet" href="bower_components/qtip2/jquery.qtip.css"/>
   </head>
 </html>
 <body>
@@ -22,15 +24,15 @@
         <div class="login__title">
           <div class="login__title-text">Авторизируйтесь</div>
         </div>
-        <form action="" class="login__form">
+        <form action="" id="login-page" class="login__form">
           <div class="login__big-wrapper">
             <div class="login__wrapper">
               <label for="login" class="login__label">Логин</label>
-              <input id="login" type="text" placeholder="Введите логин" class="login__input"/>
+              <input id="login" type="text" placeholder="Введите логин" qtip-content="введите логин" qtip-position="left" class="login__input"/>
             </div>
             <div class="login__wrapper-password">
               <label for="password" class="login__label">Пароль</label>
-              <input id="password" type="password" placeholder="Введите пароль" class="login__input"/>
+              <input id="password" type="password" placeholder="Введите пароль" qtip-content="введите пароль" qtip-position="left" class="login__input"/>
             </div>
             <div class="login__btn">
               <button type="submit" class="login__btn-enter">Войти</button>
@@ -49,4 +51,7 @@
 </footer>
 <!-- FOOTER-->
 <script src="bower_components/jquery/jquery.js"></script>
-<script src="js/main.js"></script>
+<script src="/bower_components/jquery-placeholder/jquery.placeholder.js"></script>
+<script src="js/login.js"></script>
+<script src="js/valid.js"></script>
+<script src="bower_components/qtip2/jquery.qtip.js"></script>

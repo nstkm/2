@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="css/style.css"/>
     <!-- MODERNIZR-->
     <script src="bower_components/modernizr/modernizr.js"></script>
+    <!-- qtip-->
+    <link rel="stylesheet" href="bower_components/qtip2/jquery.qtip.css"/>
   </head>
 </html>
 <body>
@@ -111,24 +113,24 @@
     <div class="popup__title">
       <div class="popup__title-text">Добавление проекта</div><a href="#" class="popup__close b-close"></a>
     </div>
-    <form action="" class="popup-form">
+    <form action="" id="my-work" class="popup-form">
       <div class="popup-wrapper">
         <label for="project-name" class="popup__label">Название проекта</label>
-        <input id="project-name" type="text" placeholder="Введите название" class="popup__input"/>
+        <input id="project-name" type="text" placeholder="Введите название" qtip-content="введите название" qtip-position="left" class="popup__input"/>
       </div>
       <div class="popup-wrapper">
         <label for="project-img" class="popup__label">Картинка проекта
-          <input id="project-img" type="file" class="popup__input-hide"/>
+          <input id="project-img" type="file" qtip-content="изображение" qtip-position="left" class="popup__input-hide"/>
           <div class="popup__input upload-image">Загрузите изображение</div>
         </label>
       </div>
       <div class="popup-wrapper">
         <label for="project-url" class="popup__label">URL проекта</label>
-        <input id="project-url" type="text" placeholder="Добавьте ссылку" class="popup__input"/>
+        <input id="project-url" type="text" placeholder="Добавьте ссылку" qtip-content="ссылка на проект" qtip-position="left" class="popup__input"/>
       </div>
       <div class="popup-wrapper textarea">
         <label for="project-text" class="popup__label">Описание</label>
-        <textarea id="project-text" type="text" rows="6" placeholder="Пара слов о вашем проекте" class="popup__text"></textarea>
+        <textarea id="project-text" type="text" rows="6" placeholder="Пара слов о вашем проекте" qtip-content="описание проекта" qtip-position="left" class="popup__text"></textarea>
       </div>
       <div class="popup__btn">
         <button type="submit" class="form__btn btn-submit">Добавить</button>
@@ -145,4 +147,8 @@
 <!-- FOOTER-->
 <script src="bower_components/jquery/jquery.js"></script>
 <script src="bower_components/bpopup/jquery.bpopup.js"></script>
+<script src="/bower_components/jquery-placeholder/jquery.placeholder.js"></script>
+<script src="js/mywork.js"></script>
 <script src="js/main.js"></script>
+<script src="bower_components/qtip2/jquery.qtip.js"></script>
+<script src="js/valid.js"></script>

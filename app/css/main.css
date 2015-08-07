@@ -373,3 +373,14 @@ body {
   background: url(../img/lock.png) no-repeat; }
   .footer__lock:hover {
     background: url(../img/unlock.png) no-repeat; }
+
+.has-error {
+  background: #fad2d1; }
+
+.has-success {
+  background: #d1fae0; }
+
+.my-qtip {
+  background: #f97e76;
+  font-size: 13px;
+  color: #ffffff; }

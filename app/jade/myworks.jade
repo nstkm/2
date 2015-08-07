@@ -81,20 +81,20 @@ div.popup(id='new-project-popup')
 		div.popup__title
 			.popup__title-text Добавление проекта
 			a.popup__close.b-close(href='#')
-		form.popup-form(action='')
+		form.popup-form(action='', id='my-work')
 			.popup-wrapper
 				label.popup__label(for="project-name") Название проекта
-				input.popup__input(id='project-name' type='text' placeholder='Введите название')
+				input.popup__input(id='project-name' type='text' placeholder='Введите название' , qtip-content="введите название" , qtip-position="left")
 			.popup-wrapper
 				label.popup__label(for="project-img") Картинка проекта
-					input.popup__input-hide(id='project-img' type='file')
+					input.popup__input-hide(id='project-img' type='file', qtip-content="изображение" , qtip-position="left")
 					.popup__input.upload-image Загрузите изображение
 			.popup-wrapper
 				label.popup__label(for="project-url") URL проекта
-				input.popup__input(id='project-url' type='text' placeholder='Добавьте ссылку')
+				input.popup__input(id='project-url' type='text' placeholder='Добавьте ссылку' , qtip-content="ссылка на проект" , qtip-position="left")
 			.popup-wrapper.textarea
 				label.popup__label(for="project-text") Описание
-				textarea.popup__text(id='project-text' type='text' rows='6' placeholder='Пара слов о вашем проекте')
+				textarea.popup__text(id='project-text' type='text' rows='6' placeholder='Пара слов о вашем проекте' , qtip-content="описание проекта" , qtip-position="left")
 			.popup__btn
 				button.form__btn.btn-submit(type='submit') Добавить
 
@@ -107,4 +107,8 @@ div.popup(id='new-project-popup')
 include ./components/footer.jade
 script(src="bower_components/jquery/jquery.js")
 script(src="bower_components/bpopup/jquery.bpopup.js")
+script(src="/bower_components/jquery-placeholder/jquery.placeholder.js")
+script(src="js/mywork.js")
 script(src="js/main.js")
+script(src="bower_components/qtip2/jquery.qtip.js")
+script(src="js/valid.js")

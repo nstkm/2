@@ -407,7 +407,17 @@ body {
 		}
 	}
 
-
+.has-error {
+	background: $has-error;
+}
+.has-success {
+	background: $has-success;
+}
+.my-qtip {
+	background: $tooltip-color;
+	font-size: 13px;
+	color: $white-text;
+}
 
 
 

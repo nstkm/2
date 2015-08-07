@@ -30,24 +30,24 @@ body
 					section.contact-me
 						div.contact-me__title
 							div.contact-me__title-text У вас интересный проект? Напишите мне
-						form.contact__form(action='')
+						form.contact__form(id='contact-me')
 							div.form__wrapper
 								div.form__name
 										label.form__label(for='name') Имя
-										input.form__input(id='name' , type='text' , name='name' ,  placeholder='Как к Вам обращаться')
+										input.form__input(id='name' , type='text' , name='name' ,  placeholder='Как к Вам обращаться' , qtip-content="Вы не ввели имя" , qtip-position="left")
 								div.form__email
 										label.form__label(for='mail') Email
-										input.form__input(id='mail' , type='email' , name='email' , placeholder='Куда мне писать')
+										input.form__input(id='mail' , type='email' , name='email' , placeholder='Куда мне писать' , qtip-content="Вы не ввели email" , qtip-position="right")
 							div.form__wrapper
 								label.form__label(for='message') Сообщение
-								textarea.form__text(id='message' , rows='10' ,  placeholder='Кратко в чем суть')
+								textarea.form__text(id='message' , rows='10' ,  placeholder='Кратко в чем суть' , qtip-content="Ваш вопрос" , qtip-position="left")
 							div.form__wrapper
 								label.form__label(for='captcha') Введите код, указанный на картинке
 									div.form__captcha
 										img.form__captcha-img(src='img/captcha.png' alt='captcha')
 									div.captcha__code
 										label.form__label(for='captcha')
-										input.form__input.captcha__code-text(type='text' placeholder='Введите код' id='captcha')
+										input.form__input.captcha__code-text(type='text' placeholder='Введите код' id='captcha' , qtip-content="Вы не ввели код" , qtip-position="right")
 							div.form__wrapper
 								div.form__btn-submit
 									button.form__btn.btn-submit(type="submit") Отправить
@@ -55,5 +55,7 @@ body
 									button.form__btn.btn-reset(type="reset") Очистить
 include ./components/footer.jade
 script(src="/bower_components/jquery/jquery.js")
-script(src="/bower_components/jquery/jquery.js")
-script(src="js/main.js")
+script(src="/bower_components/qtip2/jquery.qtip.js")
+script(src="/bower_components/jquery-placeholder/jquery.placeholder.js")
+script(src="js/contact.js")
+script(src="js/valid.js")
