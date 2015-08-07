@@ -409,14 +409,20 @@ body {
 
 .has-error {
 	background: $has-error;
+	border: $tooltip-color ;
 }
 .has-success {
 	background: $has-success;
 }
-.my-qtip {
-	background: $tooltip-color;
-	font-size: 13px;
+.my-style {
+	border-radius: 3px;
+	border: $tooltip-color ;
+}
+.qtip-content {
 	color: $white-text;
+	font-size: 13px;
+	font-family: 'fira_sans';
+
 }
 
 

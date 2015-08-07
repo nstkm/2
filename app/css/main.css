@@ -375,12 +375,17 @@ body {
     background: url(../img/unlock.png) no-repeat; }
 
 .has-error {
-  background: #fad2d1; }
+  background: #fad2d1;
+  border: #f97e76; }
 
 .has-success {
   background: #d1fae0; }
 
-.my-qtip {
-  background: #f97e76;
+.my-style {
+  border-radius: 3px;
+  border: #f97e76; }
+
+.qtip-content {
+  color: #ffffff;
   font-size: 13px;
-  color: #ffffff; }
+  font-family: 'fira_sansbook'; }

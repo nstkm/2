@@ -14,7 +14,8 @@ var myModule = (function () {
             $('#new-project-popup').bPopup({
             speed: 650,
             transition: 'slideIn',
-            transitionClose: 'slideBack'
+            transitionClose: 'slideBack',
+            positionStyle: 'fixed'
         });
     };
     return {

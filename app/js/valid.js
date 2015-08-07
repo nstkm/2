@@ -59,7 +59,7 @@
 			},
 			position: position,
 			style: {
-				classes: 'my-qtip qtip-rounded',
+				classes: 'qtip-red my-style qtip-rounded',
 				tip: {
 					height: 7,
 					width: 10
@@ -72,7 +72,7 @@
 	var validateForm = function (form) {
 		console.log("в валидации");
 
-		var validElements = form.find('input, textarea').not('input[type="file"], input[type="hidden"]'),
+		var validElements = form.find('input, textarea , .upload-image' ).not('input[type="file"], input[type="hidden"]'),
 			validat= true;
 		//console.log(validationItems);
 
