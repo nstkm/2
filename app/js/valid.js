@@ -1,4 +1,5 @@
-﻿var validation = (function () {
+﻿
+var validation = (function () {
 
 
 	var init = function () {
@@ -73,10 +74,10 @@
 		console.log("в валидации");
 
 		var validElements = form.find('input, textarea , .upload-image' ).not('input[type="file"], input[type="hidden"]'),
-			validat= true;
+			valid= true;
 		//console.log(validationItems);
 
-		$.each(validElements, function (index, val) {
+		$.each(validElements, function(index, val) {
 			var element = $(val),
 				val = element.val(),
 				position = element.attr('qtip-position');

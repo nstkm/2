@@ -12,10 +12,15 @@ var myModule = (function () {
         console.log('Модальное окно');
         e.preventDefault();
             $('#new-project-popup').bPopup({
-            speed: 650,
+            closeClass: "b-close",
+            speed: 550,
             transition: 'slideIn',
             transitionClose: 'slideBack',
-            positionStyle: 'fixed'
+            positionStyle: 'fixed',
+            onClose: function(){
+                this.find('.popup__input').trigger('hideTooltip');
+                this.find('form').trigger('reset');
+            }
         });
     };
     return {
