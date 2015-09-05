@@ -15,6 +15,7 @@ var validation = (function () {
 
 	var _removeError = function () {
 		$(this).removeClass('has-error');
+		$(this).addClass('has-success');
 	};
 
 
@@ -23,6 +24,7 @@ var validation = (function () {
 		var form = $(this);
 		form.find('input, textarea').trigger('hideTooltip');
 		form.find('.has-error').removeClass('has-error');
+		//form.find('.has-success').removeClass('has-success');
 	};
 
 
@@ -83,7 +85,7 @@ var validation = (function () {
 				position = element.attr('qtip-position');
 
 			if (val.length == 0) {
-					element.addClass('error');
+					element.addClass('has-error');
 					_createQtip(element, position);
 						validElements.addClass('has-error').removeClass('has-success');
 						valid = false;

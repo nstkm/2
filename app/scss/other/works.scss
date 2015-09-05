@@ -218,7 +218,7 @@
 				padding: 9px;
 				line-height: 21px;
 }
-.upload-image {
+.popup__input.upload-image {
 	height: 40px;
 	background: #fff;
 	color: $form-color;
@@ -228,7 +228,7 @@
 
 
 
-.upload-image:after{
+.popup__input.upload-image:after{
 	content: ' ';
 		cursor: pointer;
 		position: absolute;

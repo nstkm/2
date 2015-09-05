@@ -384,7 +384,7 @@ body {
   .footer__lock:hover {
     background: url(../img/unlock.png) no-repeat; }
 
-.has-error {
+.popup__input.has-error {
   background: #fad2d1;
   border: 1px solid #f97e76; }
 
